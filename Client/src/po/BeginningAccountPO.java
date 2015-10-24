@@ -10,7 +10,7 @@ public class BeginningAccountPO implements Serializable{
 	ArrayList<InventoryInfoPO> inventoryInfo;//库存信息
 	AccountPO accountInfo;//银行账户信息
 	
-	public BeginningAccountPO(int,
+	public BeginningAccountPO(int year,
 			ArrayList<UserPO> userInfo,
 			ArrayList<CarInfoPO> carInfo,
 			ArrayList<InventoryInfoPO> inventoryInfo,

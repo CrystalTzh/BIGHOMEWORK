@@ -50,7 +50,7 @@ public class OfficeArrivalFormPO implements Serializable{
 	public void setDestination(String destination) {
 		this.destination = destination;
 	}
-	public void setState(int state) {
+	public void setState(State state) {
 		this.state = state;
 	}
 	

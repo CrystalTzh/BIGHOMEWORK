@@ -1,4 +1,4 @@
-package presentation.userui;
+package presentation.financeui;
 
 public class ManagerPanel {
 
