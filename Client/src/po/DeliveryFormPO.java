@@ -1,9 +1,14 @@
 package po;
+<<<<<<< HEAD
 
 import java.io.Serializable;
 
 import state.State;
 
+=======
+import java.io.Serializable;
+
+>>>>>>> origin/master
 public class DeliveryFormPO implements Serializable{
 	String arrivaeDate;//到达日期
 	long ID;//订单条形码号

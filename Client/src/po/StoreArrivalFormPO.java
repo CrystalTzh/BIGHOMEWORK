@@ -8,10 +8,17 @@ public class StoreArrivalFormPO implements Serializable {
 
 	long NO; //营业厅到达单编号
 	String relayNumber; //中转中心编号
+<<<<<<< HEAD
 	String arriveDate; // 到达日期
 	String relayFormNumber; //中转单编号
 	String startingPoint; //出发地
 	State state; //货物到达状态
+=======
+	String arriveDate; //到达日期
+	String relayFormNumber; //中转单编号
+	String startingPoint; //出发地
+	State state;//货物到达状态
+>>>>>>> origin/master
 	
 	public String getRelayNumber() {
 		return relayNumber;

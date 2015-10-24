@@ -1,7 +1,11 @@
 package po;
+<<<<<<< HEAD
 
 import java.io.Serializable;
 import state.UserRole;
+=======
+import java.io.Serializable;
+>>>>>>> origin/master
 
 public class UserPO implements Serializable{
 	long userAccount;//用户名（即账号）

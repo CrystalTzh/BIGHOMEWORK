@@ -1,8 +1,16 @@
 package po;
+<<<<<<< HEAD
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
+=======
+import java.io.Serializable;
+import java.util.ArrayList;
+
+import UserPO;
+
+>>>>>>> origin/master
 public class BeginningAccountPO implements Serializable{
 	int year;//建立年份
 	ArrayList<UserPO> userInfo;//当前机构人员账户信息
@@ -10,7 +18,11 @@ public class BeginningAccountPO implements Serializable{
 	ArrayList<InventoryInfoPO> inventoryInfo;//库存信息
 	AccountPO accountInfo;//银行账户信息
 	
+<<<<<<< HEAD
 	public BeginningAccountPO(int,
+=======
+	public BeginningAccountPO(int　year,
+>>>>>>> origin/master
 			ArrayList<UserPO> userInfo,
 			ArrayList<CarInfoPO> carInfo,
 			ArrayList<InventoryInfoPO> inventoryInfo,

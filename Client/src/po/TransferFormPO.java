@@ -16,6 +16,7 @@ public class TransferFormPO implements Serializable {
 	String zone;
 	int line;
 	int shelf;
+<<<<<<< HEAD
 	int tag; //区号排号架号位号
 	ArrayList<Long> allIDs; // 所有订单号
 	double transCharge; //运费
@@ -40,6 +41,12 @@ public class TransferFormPO implements Serializable {
 		this.allIDs = allIDs;
 		this.transCharge = transCharge;
 	}
+=======
+	int tag; //区号排号位号架号
+	ArrayList<Long> allIDs; //所有订单号
+	double transCharge; //运费
+	
+>>>>>>> origin/master
 	
 	public String getPutOnCarDate() {
 		return putOnCarDate;

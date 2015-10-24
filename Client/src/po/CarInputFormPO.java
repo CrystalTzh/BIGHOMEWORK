@@ -13,6 +13,7 @@ public class CarInputFormPO implements Serializable {
 	String putOnCarDate; //装车日期
 	ArrayList<Long> allIDs; //本次装车所有订单号
 	double transCharge; //运费
+<<<<<<< HEAD
 	
 	
 	public CarInputFormPO(long NO,String destination,String motorNumber,
@@ -31,6 +32,8 @@ public class CarInputFormPO implements Serializable {
 		this.allIDs = allIDs;
 		this.transCharge = transCharge;
 	}
+=======
+>>>>>>> origin/master
 	
 	public String getDestination() {
 		return destination;
