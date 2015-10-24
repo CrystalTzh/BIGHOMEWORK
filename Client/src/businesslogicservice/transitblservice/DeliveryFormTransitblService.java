@@ -1,13 +1,11 @@
 package businesslogicservice.transitblservice;
 
-public interface DeliveryFormTransitblService {
+import vo.DeliveryFormVO;
 
-	public boolean addDeliveryFormInfo (String arrivaeDate, long ID, String deliveryMan);
-	
-	public boolean DeliveryFormcancel();
-	
-	public boolean DeliveryFormdelete();
-	
-	public boolean DeliveryFormwithdraw();
-	
+public interface DeliveryFormTransitblService {
+	public DeliveryFormVO DeliveryFormcreate ();
+	public void DeliveryFormcancel (DeliveryFormVO vo);
+	public boolean DeliveryFormsave (DeliveryFormVO vo);
+	public boolean DeliveryFormsubmit (DeliveryFormVO vo);
+	public boolean DeliveryFormwithdraw (DeliveryFormVO vo);
 }

@@ -1,16 +1,11 @@
 package businesslogicservice.transitblservice;
 
-import state.State;
+import vo.OfficeArrivalFormVO;
 
 public interface OfficeArrivalFormTransitblService {
-
-	public boolean addOfficeArrivalInfo (long relayformnumber,
-			String startingpoint, State state);
-	//根据中转单编号可以获取一批ID，然后更改货物的状态、历史轨迹等等
-	public boolean OfficeArricalFormcancel();
-	
-	public boolean OfficeArricalFormdelete();
-	
-	public boolean OfficeArricalFormwithdraw();
-	
+	public OfficeArrivalFormVO OfficeArrivalFormcreate ();
+	public void OfficeArrivalFormcancel (OfficeArrivalFormVO vo);
+	public boolean OfficeArrivalFormsave (OfficeArrivalFormVO vo);
+	public boolean OfficeArrivalFormsubmit (OfficeArrivalFormVO vo);
+	public boolean OfficeArrivalFormwithdraw (OfficeArrivalFormVO vo);
 }

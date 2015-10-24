@@ -1,16 +1,11 @@
 package businesslogicservice.transitblservice;
 
-import state.Transport;
+import vo.TransferFormVO;
 
 public interface TransferFormblService {
-
-	public boolean addTransferFormInfo (Transport transport,String loadingMember,
-			String relayNumber,String date);
-	
-	public boolean TransferFormcancel();
-	
-	public boolean TransferFormdelete();
-	
-	public boolean TransferFormwithdraw();
-	
+	public TransferFormVO TransferFormcreate ();
+	public void TransferFormcancel (TransferFormVO vo);
+	public boolean TransferFormsave (TransferFormVO vo);
+	public boolean TransferFormsubmit (TransferFormVO vo);
+	public boolean TransferFormwithdraw (TransferFormVO vo);
 }
