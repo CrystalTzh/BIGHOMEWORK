@@ -7,18 +7,19 @@ import state.Transport;
 
 public class TransferFormPO implements Serializable {
 	
-	String putOnCarDate; //×°³µÈÕÆÚ
-	long NO;//±¾ÖĞ×ªÖĞĞÄÖĞ×ªµ¥±àºÅ
-	String startingpoint; //³ö·¢µØ
-	String destination; //µ½´ïµØ
-	String loadingMember; //¼à×°Ô±
-	Transport transport; //ÔËÊä·½Ê½
+	String putOnCarDate; //è£…è½¦æ—¥æœŸ
+	long NO;//ä¸­è½¬å•ç¼–å·
+	String startingpoint; //å‡ºå‘åœ°
+	String destination; //åˆ°è¾¾åœ°
+	String loadingMember; //ç›‘è£…å‘˜
+	Transport transport; //è¿è¾“æ–¹å¼
 	String zone;
 	int line;
 	int shelf;
-	int tag; //£¨»õ¹ñºÅ£©ÇøºÅÅÅºÅ¼ÜºÅÎ»ºÅ
-	ArrayList<Long> allIDs; //ËùÓĞ¶©µ¥ºÅ
-	double transCharge; //ÔË·Ñ
+	int tag; //åŒºå·æ’å·ä½å·æ¶å·
+	ArrayList<Long> allIDs; //æ‰€æœ‰è®¢å•å·
+	double transCharge; //è¿è´¹
+	
 	
 	public String getPutOnCarDate() {
 		return putOnCarDate;

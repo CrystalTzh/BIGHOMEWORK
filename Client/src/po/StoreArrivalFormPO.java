@@ -4,12 +4,12 @@ import java.io.Serializable;
 
 public class StoreArrivalFormPO implements Serializable {
 
-	long NO; //ÖĞ×ªÖĞĞÄµ½´ïµ¥±àºÅ
-	String relayNumber; //ÖĞ×ªÖĞĞÄ±àºÅ
-	String arriveDate; // µ½´ïÊ±¼ä
-	String relayFormNumber; //ÖĞ×ªµ¥±àºÅ
-	String startingPoint; //³ö·¢µØ
-	State state; //»õÎïµ½´ï×´Ì¬
+	long NO; //è¥ä¸šå…åˆ°è¾¾å•ç¼–å·
+	String relayNumber; //ä¸­è½¬ä¸­å¿ƒç¼–å·
+	String arriveDate; //åˆ°è¾¾æ—¥æœŸ
+	String relayFormNumber; //ä¸­è½¬å•ç¼–å·
+	String startingPoint; //å‡ºå‘åœ°
+	State state;//è´§ç‰©åˆ°è¾¾çŠ¶æ€
 	
 	public String getRelayNumber() {
 		return relayNumber;
