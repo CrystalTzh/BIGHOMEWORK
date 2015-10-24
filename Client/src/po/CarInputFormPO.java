@@ -4,15 +4,33 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class CarInputFormPO implements Serializable {
-	long NO; //×°³µµ¥±àºÅ
-	String destination; //µ½´ïµØ
-	String motorNumber; //±¾ÖĞ×ªÖĞĞÄÆûÔË±àºÅ
-	String carNumber; //³µÁ¾´úºÅ
-	String loadingMember; //¼à×°Ô±
-	String supercargo; //ÑºÔËÔ±
-	String putOnCarDate; //×°³µÈÕÆÚ
-	ArrayList<Long> allIDs; //ËùÓĞ¶©µ¥ºÅ
-	double transCharge; //ÔË·Ñ
+	long NO; //è£…è½¦å•ç¼–å·
+	String destination; //ç›®çš„åœ°
+	String motorNumber; //æ±½è¿ç¼–å·
+	String carNumber; //è½¦è¾†ä»£å·
+	String loadingMember; //ç›‘è£…å‘˜
+	String supercargo; //æŠ¼è¿å‘˜
+	String putOnCarDate; //è£…è½¦æ—¥æœŸ
+	ArrayList<Long> allIDs; //æœ¬æ¬¡è£…è½¦æ‰€æœ‰è®¢å•å·
+	double transCharge; //è¿è´¹
+	
+	
+	public CarInputFormPO(long NO,String destination,String motorNumber,
+			String carNumber,String loadingMember,
+			String supercargo,String putOnCarDate,
+			ArrayList<Long> allIDs,double transCharge) {
+		super();
+		// TODO Auto-generated constructor stub
+		this.NO = NO;
+		this.destination = destination;
+		this.motorNumber = motorNumber;
+		this.carNumber = carNumber;
+		this.loadingMember = loadingMember;
+		this.supercargo = supercargo;
+		this.putOnCarDate = putOnCarDate;
+		this.allIDs = allIDs;
+		this.transCharge = transCharge;
+	}
 	
 	public String getDestination() {
 		return destination;

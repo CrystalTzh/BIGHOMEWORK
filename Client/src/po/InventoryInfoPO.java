@@ -12,6 +12,14 @@ public class InventoryInfoPO implements Serializable {
 	double limit;
 	Zone emptyZone;
 	
+	public InventoryInfoPO(ArrayList<LocationNode> locationNode,double limit,Zone emptyZone) {
+		super();
+		// TODO Auto-generated constructor stub
+		this.locationNode = locationNode;
+		this.limit = limit;
+		this.emptyZone = emptyZone;
+	}
+	
 	public ArrayList<LocationNode> getLocationNode() {
 		return locationNode;
 	}

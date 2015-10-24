@@ -7,18 +7,39 @@ import state.Transport;
 
 public class TransferFormPO implements Serializable {
 	
-	String putOnCarDate; //×°³µÈÕÆÚ
-	long NO;//±¾ÖĞ×ªÖĞĞÄÖĞ×ªµ¥±àºÅ
-	String startingpoint; //³ö·¢µØ
-	String destination; //µ½´ïµØ
-	String loadingMember; //¼à×°Ô±
-	Transport transport; //ÔËÊä·½Ê½
+	String putOnCarDate; //è£…è½¦æ—¥æœŸ
+	long NO;//ä¸­è½¬å•ç¼–å·
+	String startingpoint; //å‡ºå‘åœ°
+	String destination; //åˆ°è¾¾åœ°
+	String loadingMember; //ç›‘è£…å‘˜
+	Transport transport; //è¿è¾“æ–¹å¼
 	String zone;
 	int line;
 	int shelf;
-	int tag; //£¨»õ¹ñºÅ£©ÇøºÅÅÅºÅ¼ÜºÅÎ»ºÅ
-	ArrayList<Long> allIDs; //ËùÓĞ¶©µ¥ºÅ
-	double transCharge; //ÔË·Ñ
+	int tag; //åŒºå·æ’å·æ¶å·ä½å·
+	ArrayList<Long> allIDs; // æ‰€æœ‰è®¢å•å·
+	double transCharge; //è¿è´¹
+	
+	
+	public TransferFormPO(String putOnCarDate,long NO,String startingpoint,
+			String destination,String loadingMember,Transport transport,
+			String zone,int line,int shelf,int tag,ArrayList<Long> allIDs,
+			double transCharge) {
+		super();
+		// TODO Auto-generated constructor stub
+		this.putOnCarDate = putOnCarDate;
+		this.NO = NO;
+		this.startingpoint = startingpoint;
+		this.destination = destination;
+		this.loadingMember = loadingMember;
+		this.transport = transport;
+		this.zone = zone;
+		this.line = line;
+		this.shelf = shelf;
+		this.tag = tag;
+		this.allIDs = allIDs;
+		this.transCharge = transCharge;
+	}
 	
 	public String getPutOnCarDate() {
 		return putOnCarDate;
