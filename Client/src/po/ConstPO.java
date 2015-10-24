@@ -1,8 +1,5 @@
 package po;
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 import java.io.Serializable;
 
 public  class ConstPO implements Serializable{

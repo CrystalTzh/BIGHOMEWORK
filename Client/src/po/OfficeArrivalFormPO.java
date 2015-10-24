@@ -1,14 +1,9 @@
 package po;
-<<<<<<< HEAD
 
 import java.io.Serializable;
 
 import state.State;
 
-=======
-import java.io.Serializable;
-
->>>>>>> origin/master
 public class OfficeArrivalFormPO implements Serializable{
 	long NO;//编号
 	String arriveDate;//到达日期
@@ -16,11 +11,7 @@ public class OfficeArrivalFormPO implements Serializable{
 	String startingpoint; //出发地
 	String destination; //目的地
 	State state; //货物到达状态
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> origin/master
 	public OfficeArrivalFormPO(long NO, String arriveDate,
 			long relayformnumber, String startingpoint,
 			String destination, State state) {
@@ -59,11 +50,7 @@ public class OfficeArrivalFormPO implements Serializable{
 	public void setDestination(String destination) {
 		this.destination = destination;
 	}
-<<<<<<< HEAD
 	public void setState(int state) {
-=======
-	public void setState(State state) {
->>>>>>> origin/master
 		this.state = state;
 	}
 	

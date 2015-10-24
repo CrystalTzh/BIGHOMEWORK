@@ -1,14 +1,9 @@
 package po;
-<<<<<<< HEAD
 
 import java.io.Serializable;
 
 import state.ExpressType;
 
-=======
-import java.io.Serializable;
-
->>>>>>> origin/master
 public class OrderFormPO implements Serializable {
 	String sendername;
 	String senderaddress;
@@ -32,10 +27,7 @@ public class OrderFormPO implements Serializable {
 	String date; //寄件日期
 	String realReceiver; //实际收件人
 	String realReceiveDate;//实际收件日期
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 	
 	public OrderFormPO (String sendername, 
 			String senderaddress, String sendercompany, 
