@@ -4,7 +4,7 @@ import java.rmi.RemoteException;
 
 import po.CarOfficePO;
 
-public interface CarOfficedataService {
+public interface CarOfficeTransitdataService {
 	public CarOfficePO find(long NO) throws RemoteException;
 	public void insert(CarOfficePO po) throws RemoteException;
 	public void delete(long NO) throws RemoteException;

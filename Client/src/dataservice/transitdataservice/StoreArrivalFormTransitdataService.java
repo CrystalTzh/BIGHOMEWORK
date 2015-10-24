@@ -4,7 +4,7 @@ import java.rmi.RemoteException;
 
 import po.StoreArrivalFormPO;
 
-public interface StoreArrivalFormdataService {
+public interface StoreArrivalFormTransitdataService {
 	public StoreArrivalFormPO find(long NO) throws RemoteException;
 	public void insert(StoreArrivalFormPO po) throws RemoteException;
 	public void delete(long NO) throws RemoteException;

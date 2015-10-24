@@ -4,7 +4,7 @@ import java.rmi.RemoteException;
 
 import po.CarInputFormPO;
 
-public interface CarInputFormdataService {
+public interface CarInputTransitFormdataService {
 	public CarInputFormPO find(long NO) throws RemoteException;
 	public void insert(CarInputFormPO po) throws RemoteException;
 	public void delete(long NO) throws RemoteException;
