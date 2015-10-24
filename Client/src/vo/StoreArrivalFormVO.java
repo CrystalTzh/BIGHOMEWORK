@@ -2,6 +2,7 @@ package vo;
 
 import java.io.Serializable;
 
+import state.FormState;
 import state.State;
 
 public class StoreArrivalFormVO implements Serializable {
@@ -12,6 +13,19 @@ public class StoreArrivalFormVO implements Serializable {
 	long relayformnumber; //中转单编号
 	String startingPoint; //出发地
 	State state; //货物到达状态
+	FormState formstate;//单据的状态
+	
+	public StoreArrivalFormVO(long NO, long relayformnumber, String arriveDate, String relaynumber, State state, String startingPoint, FormState formstate) {
+		super();
+		// TODO Auto-generated constructor stub
+		this.NO = NO;
+		this.relayformnumber = relayformnumber;
+		this.arriveDate = arriveDate;
+		this.relaynumber = relaynumber;
+		this.startingPoint = startingPoint;
+		this.state = state;
+		this.formstate = formstate;
+	}
 	
 	public String getRelayNumber() {
 		return relaynumber;
@@ -43,5 +57,30 @@ public class StoreArrivalFormVO implements Serializable {
 	public void setState(State state) {
 		this.state = state;
 	}
+	public long getNO() {
+		return NO;
+	}
+	public String getRelaynumber() {
+		return relaynumber;
+	}
+	public long getRelayformnumber() {
+		return relayformnumber;
+	}
+	public FormState getFormstate() {
+		return formstate;
+	}
+	public void setNO(long nO) {
+		NO = nO;
+	}
+	public void setRelaynumber(String relaynumber) {
+		this.relaynumber = relaynumber;
+	}
+	public void setRelayformnumber(long relayformnumber) {
+		this.relayformnumber = relayformnumber;
+	}
+	public void setFormstate(FormState formstate) {
+		this.formstate = formstate;
+	}
+	
 	
 }

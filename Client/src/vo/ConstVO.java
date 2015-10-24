@@ -2,6 +2,8 @@ package vo;
 
 import java.io.Serializable;
 
+import state.FormState;
+
 public  class ConstVO implements Serializable{
 	double distancePrice;//距离价格常量
 	double baseSalary;//快递员和营业厅业务员的基本工资
@@ -9,15 +11,17 @@ public  class ConstVO implements Serializable{
 	double sendExpressPrize;//快递员派件提成
 	double salaryEachInCity;//司机市内计次
 	double salaryEachOutCity;//司机跨市计次
+	FormState formstate;//单据的状态
 	
 	public ConstVO(double dp, double bs, double rep, double sep, 
-			double sei, double seo) {
+			double sei, double seo, FormState formstate) {
 		distancePrice = dp;
 		baseSalary	=bs;
 		receiveExpressPrize = rep;
 		sendExpressPrize = sep;
 		salaryEachInCity = sei;
 		salaryEachOutCity = seo;
+		this.formstate = formstate;
 	}
 
 	public double getDistancePrice() {
@@ -66,6 +70,14 @@ public  class ConstVO implements Serializable{
 
 	public void setSalaryEachOutCity(double salaryEachOutCity) {
 		this.salaryEachOutCity = salaryEachOutCity;
+	}
+
+	public FormState getFormstate() {
+		return formstate;
+	}
+
+	public void setFormstate(FormState formstate) {
+		this.formstate = formstate;
 	}
 	
 }

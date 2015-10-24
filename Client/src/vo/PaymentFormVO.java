@@ -2,6 +2,8 @@ package vo;
 
 import java.io.Serializable;
 
+import state.FormState;
+
 public class PaymentFormVO implements Serializable{
 	String date;
 	double money;
@@ -15,13 +17,15 @@ public class PaymentFormVO implements Serializable{
 	double bonus;
 	int month;
 	String NO;
+	FormState formstate;//单据的状态
 	
-	public PaymentFormVO(String d,double m,String n,long a,String N){
+	public PaymentFormVO(String d,double m,String n,long a,String N, FormState formstate){
 		date = d;
 		money = m;
 		name = n;
 		account = a;
 		NO = N;
+		this.formstate = formstate;
 	}
 
 	public String getDate() {
@@ -71,4 +75,61 @@ public class PaymentFormVO implements Serializable{
 	public int getMonth() {
 		return month;
 	}
+
+	public FormState getFormstate() {
+		return formstate;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public void setMoney(double money) {
+		this.money = money;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setAccount(long account) {
+		this.account = account;
+	}
+
+	public void setRent(double rent) {
+		this.rent = rent;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public void setFreight(double freight) {
+		this.freight = freight;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+
+	public void setMonth(int month) {
+		this.month = month;
+	}
+
+	public void setNO(String nO) {
+		NO = nO;
+	}
+
+	public void setFormstate(FormState formstate) {
+		this.formstate = formstate;
+	}
+	
 }

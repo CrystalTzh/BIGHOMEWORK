@@ -2,6 +2,7 @@ package vo;
 
 import java.io.Serializable;
 
+import state.FormState;
 import state.SexList;
 
 public class DriverInfoVO implements Serializable{
@@ -13,8 +14,9 @@ public class DriverInfoVO implements Serializable{
 	long cellphone;
 	String licensedate;
 	SexList sex;
+	FormState formstate;//单据的状态
 	
-	public DriverInfoVO(long d, String n,String b,String i,long c,String l,SexList s){
+	public DriverInfoVO(long d, String n,String b,String i,long c,String l,SexList s, FormState formstate){
 		driverNumber = d;
 		name = n;
 		birthday = b;
@@ -22,6 +24,7 @@ public class DriverInfoVO implements Serializable{
 		cellphone = c;
 		licensedate = l;
 		sex = s;
+		this.formstate = formstate;
 	}
 
 	public void setDriverNumber(long driverNumber) {
@@ -79,4 +82,13 @@ public class DriverInfoVO implements Serializable{
 	public SexList getSex() {
 		return sex;
 	}
+
+	public FormState getFormstate() {
+		return formstate;
+	}
+
+	public void setFormstate(FormState formstate) {
+		this.formstate = formstate;
+	}
+	
 }

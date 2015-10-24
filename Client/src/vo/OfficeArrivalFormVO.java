@@ -2,6 +2,7 @@ package vo;
 
 import java.io.Serializable;
 
+import state.FormState;
 import state.State;
 
 public class OfficeArrivalFormVO implements Serializable{
@@ -11,16 +12,18 @@ public class OfficeArrivalFormVO implements Serializable{
 	String startingpoint; //出发地
 	String destination; //目的地
 	State state; //货物到达状态
+	FormState formstate;//单据的状态
 
 	public OfficeArrivalFormVO(long NO, String arriveDate,
 			long relayformnumber, String startingpoint,
-			String destination, State state) {
+			String destination, State state, FormState formstate) {
 		this.NO = NO;
 		this.arriveDate = arriveDate;
 		this.relayformnumber = relayformnumber;
 		this.startingpoint = startingpoint;
 		this.destination = destination;
 		this.state = state;
+		this.formstate = formstate;
 	}
 	
 	public String getArriveDate() {
@@ -52,6 +55,22 @@ public class OfficeArrivalFormVO implements Serializable{
 	}
 	public void setState(State state) {
 		this.state = state;
+	}
+
+	public long getNO() {
+		return NO;
+	}
+
+	public FormState getFormstate() {
+		return formstate;
+	}
+
+	public void setNO(long nO) {
+		NO = nO;
+	}
+
+	public void setFormstate(FormState formstate) {
+		this.formstate = formstate;
 	}
 	
 }

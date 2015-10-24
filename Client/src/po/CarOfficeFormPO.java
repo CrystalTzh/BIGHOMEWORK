@@ -1,9 +1,9 @@
-package vo;
+package po;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class CarOfficeVO implements Serializable{
+public class CarOfficeFormPO implements Serializable{
 	long NO;//编号
 	String putOnCarDate;//装车日期
 	String officeNumber;//本营业厅编号
@@ -15,7 +15,7 @@ public class CarOfficeVO implements Serializable{
 	ArrayList<Long> allIDs;//本次装箱所有条形码号
 	long transitChange;//运费
 	
-	public CarOfficeVO(long NO, String putOnCarDate, 
+	public CarOfficeFormPO(long NO, String putOnCarDate, 
 			String officeNumber, String motorNumber,
 			String destiantion, String carNumber,
 			String loadingMember, String supercargo,

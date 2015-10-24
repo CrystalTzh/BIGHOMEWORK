@@ -3,6 +3,8 @@ package vo;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+import state.FormState;
+
 public class CarInputFormVO implements Serializable {
 	long NO; //装车单编号
 	String destination; //目的地
@@ -13,12 +15,13 @@ public class CarInputFormVO implements Serializable {
 	String putOnCarDate; //装车日期
 	ArrayList<Long> allIDs; //本次装车所有订单号
 	double transCharge; //运费
+	FormState formstate;//单据的状态
 	
 	
 	public CarInputFormVO(long NO,String destination,String motorNumber,
 			String carNumber,String loadingMember,
 			String supercargo,String putOnCarDate,
-			ArrayList<Long> allIDs,double transCharge) {
+			ArrayList<Long> allIDs,double transCharge, FormState formstate) {
 		super();
 		// TODO Auto-generated constructor stub
 		this.NO = NO;
@@ -30,6 +33,7 @@ public class CarInputFormVO implements Serializable {
 		this.putOnCarDate = putOnCarDate;
 		this.allIDs = allIDs;
 		this.transCharge = transCharge;
+		this.formstate = formstate;
 	}
 	
 	public String getDestination() {
@@ -87,4 +91,12 @@ public class CarInputFormVO implements Serializable {
 		NO = nO;
 	}
 
+	public FormState getFormstate() {
+		return formstate;
+	}
+
+	public void setFormstate(FormState formstate) {
+		this.formstate = formstate;
+	}
+	
 }

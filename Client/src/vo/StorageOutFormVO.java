@@ -2,18 +2,22 @@ package vo;
 
 import java.io.Serializable;
 
+import state.FormState;
+
 public class StorageOutFormVO implements  Serializable{
 	String NO;
 	String date;
 	long expressNumber;
 	String destination;
 	String position;
+	FormState formstate;//单据的状态
 	
-	public  StorageOutFormVO(String da,long i,String de,String p){
+	public  StorageOutFormVO(String da,long i,String de,String p, FormState formstate){
 		date=da;
 		expressNumber=i;
 		destination=de;
 		position=p;
+		this.formstate = formstate;
 	}
 	
 	public String getDate() {
@@ -39,8 +43,29 @@ public class StorageOutFormVO implements  Serializable{
 	public void setPosition(String position) {
 		this.position=position;
 	}
+
+	public String getNO() {
+		return NO;
+	}
+
+	public String getDestination() {
+		return destination;
+	}
+
+	public FormState getFormstate() {
+		return formstate;
+	}
+
+	public void setNO(String nO) {
+		NO = nO;
+	}
+
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+
+	public void setFormstate(FormState formstate) {
+		this.formstate = formstate;
+	}
+	
 }
-//���Կ���һ����show�ķ���
-//public String show(long ID){
-//	return information;
-//}

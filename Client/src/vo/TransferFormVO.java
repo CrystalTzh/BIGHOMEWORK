@@ -3,6 +3,7 @@ package vo;
 import java.io.*;
 import java.util.ArrayList;
 
+import state.FormState;
 import state.Transport;
 
 public class TransferFormVO implements Serializable {
@@ -20,12 +21,13 @@ public class TransferFormVO implements Serializable {
 	int tag; //区号排号架号位号
 	ArrayList<Long> allIDs; // 所有订单号
 	double transCharge; //运费
+	FormState formstate;//单据的状态
 	
 	
 	public TransferFormVO(String putOnCarDate,long NO,String startingpoint,
 			String destination,String loadingMember,Transport transport,
 			String zone,int line,int shelf,int tag,ArrayList<Long> allIDs,
-			double transCharge) {
+			double transCharge, FormState formstate) {
 		super();
 		// TODO Auto-generated constructor stub
 		this.putOnCarDate = putOnCarDate;
@@ -40,6 +42,7 @@ public class TransferFormVO implements Serializable {
 		this.tag = tag;
 		this.allIDs = allIDs;
 		this.transCharge = transCharge;
+		this.formstate = formstate;
 	}
 	
 	public String getPutOnCarDate() {
@@ -107,6 +110,30 @@ public class TransferFormVO implements Serializable {
 	}
 	public void setNO(long NO) {
 		this.NO = NO;
+	}
+
+	public long getRelayFormNumber() {
+		return relayFormNumber;
+	}
+
+	public Transport getTransport() {
+		return transport;
+	}
+
+	public FormState getFormstate() {
+		return formstate;
+	}
+
+	public void setRelayFormNumber(long relayFormNumber) {
+		this.relayFormNumber = relayFormNumber;
+	}
+
+	public void setTransport(Transport transport) {
+		this.transport = transport;
+	}
+
+	public void setFormstate(FormState formstate) {
+		this.formstate = formstate;
 	}
 	
 }

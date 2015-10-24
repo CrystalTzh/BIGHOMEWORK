@@ -1,9 +1,11 @@
-package po;
+package vo;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class CarOfficePO implements Serializable{
+import state.FormState;
+
+public class CarOfficeFormVO implements Serializable{
 	long NO;//编号
 	String putOnCarDate;//装车日期
 	String officeNumber;//本营业厅编号
@@ -14,12 +16,13 @@ public class CarOfficePO implements Serializable{
 	String supercargo; //押运员
 	ArrayList<Long> allIDs;//本次装箱所有条形码号
 	long transitChange;//运费
+	FormState formstate;//单据的状态
 	
-	public CarOfficePO(long NO, String putOnCarDate, 
+	public CarOfficeFormVO(long NO, String putOnCarDate, 
 			String officeNumber, String motorNumber,
 			String destiantion, String carNumber,
 			String loadingMember, String supercargo,
-			ArrayList<Long> allIDs, long transitChange) {
+			ArrayList<Long> allIDs, long transitChange, FormState formstate) {
 		this.NO = NO;
 		this.putOnCarDate = putOnCarDate;
 		this.officeNumber = officeNumber;
@@ -30,6 +33,7 @@ public class CarOfficePO implements Serializable{
 		this.supercargo = supercargo;
 		this.allIDs = allIDs;
 		this.transitChange = transitChange;
+		this.formstate = formstate;
 	}
 	
 	public long getNO() {
@@ -91,6 +95,14 @@ public class CarOfficePO implements Serializable{
 	}
 	public void setTransitChange(long transitChange) {
 		this.transitChange = transitChange;
+	}
+
+	public FormState getFormstate() {
+		return formstate;
+	}
+
+	public void setFormstate(FormState formstate) {
+		this.formstate = formstate;
 	}
 	
 }
