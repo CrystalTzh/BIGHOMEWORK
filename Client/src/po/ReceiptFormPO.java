@@ -8,14 +8,14 @@ public class ReceiptFormPO implements  Serializable{
 	double money;
 	String expressname;
 	ArrayList<Long> id;
-	String NO;
+	long NO;
 	
-	public ReceiptFormPO(String d,double m,String e,ArrayList<Long> i,String N){
+	public ReceiptFormPO(String d,double m,String e,ArrayList<Long> i,long NO){
 		date = d;
 		money = m;
 		expressname = e;
 		id = i;
-		NO = N; 
+		this.NO = NO; 
 	}
 
 	public String getDate() {
@@ -34,7 +34,7 @@ public class ReceiptFormPO implements  Serializable{
 		return id;
 	}
 	
-	public String getNO(){
+	public long getNO(){
 		return NO;
 	}
 }

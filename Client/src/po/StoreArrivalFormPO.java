@@ -7,20 +7,20 @@ import state.State;
 public class StoreArrivalFormPO implements Serializable {
 
 	long NO; //营业厅到达单编号
-	String relayNumber; //中转中心编号
+	String relaynumber; //中转中心编号
 	String arriveDate; // 到达日期
-	String relayFormNumber; //中转单编号
+	long relayformnumber; //中转单编号
 	String startingPoint; //出发地
 	State state; //货物到达状态
 	
 	public String getRelayNumber() {
-		return relayNumber;
+		return relaynumber;
 	}
 	public String getArriveDate() {
 		return arriveDate;
 	}
-	public String getRelayFormNumber() {
-		return relayFormNumber;
+	public long getRelayFormNumber() {
+		return relayformnumber;
 	}
 	public String getStartingPoint() {
 		return startingPoint;
@@ -28,14 +28,14 @@ public class StoreArrivalFormPO implements Serializable {
 	public State getState() {
 		return state;
 	}
-	public void setRelayNumber(String relayNumber) {
-		this.relayNumber = relayNumber;
+	public void setRelayNumber(String relaynumber) {
+		this.relaynumber = relaynumber;
 	}
 	public void setArriveDate(String arriveDate) {
 		this.arriveDate = arriveDate;
 	}
-	public void setRelayFormNumber(String relayFormNumber) {
-		this.relayFormNumber = relayFormNumber;
+	public void setRelayFormNumber(long relayformNumber) {
+		this.relayformnumber = relayformnumber;
 	}
 	public void setStartingPoint(String startingPoint) {
 		this.startingPoint = startingPoint;

@@ -1,15 +1,33 @@
 package businesslogic.inventorybl;
 
+import java.util.ArrayList;
+
 import state.NodeState;
 import state.Zone;
 
 public class LocationNode {
-	Zone zone; //区号
-	int line; //排号
-	int shelf; // 架号
-	int tag; //位号
-	long ID; //对应位置的订单号
-	NodeState state; //每个位置的状态
+	Zone zone; //鍖哄彿
+	int line; //鎺掑彿
+	int shelf; //鏋跺彿
+	int tag; //浣嶅彿
+	long ID; //姣忎釜浣嶇疆瀵瑰簲鐨勮鍗曞彿
+	NodeState state; //姣忎釜浣嶇疆鐨勭姸鎬侊紙琚崰鎹�佺┖闂诧級
+	
+	ArrayList<PLANENode> takenplanenode;
+	ArrayList<PLANENode> vacantplanenode;
+	
+
+	public LocationNode(Zone zone, int line, int shelf, int tag, long ID, NodeState state) {
+		super();
+		// TODO Auto-generated constructor stub
+		this.zone = zone;
+		this.line = line;
+		this.shelf = shelf;
+		this.tag = tag;
+		this.ID = ID;
+		this.state = state;
+		
+	}
 
 	public Zone getZone() {
 		return zone;
@@ -46,7 +64,7 @@ public class LocationNode {
 	public void setTag(int tag) {
 		this.tag = tag;
 	}
-	//当需要调整库存分区时，就把空仓库的state从EMPTY调整成对应的分区，在setTag方法里面的tag*2
+	//褰撴妸鏈哄姩浠撳簱璋冩暣涓虹浉搴旂殑鍖烘椂锛屽氨鎶妕ag*2
 	
 	public void setState(NodeState state) {
 		this.state = state;

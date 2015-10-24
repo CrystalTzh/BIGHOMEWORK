@@ -3,12 +3,12 @@ package po;
 import java.io.Serializable;
 import state.UserRole;
 
-public class UserPO implements Serializable{
+public class UserInfoPO implements Serializable{
 	long userAccount;//用户名（即账号）
 	String password;//账号密码
 	UserRole userRole;//用户类型（依据职业）
 	
-	public UserPO(long accountID, String password, 
+	public UserInfoPO(long accountID, String password, 
 			UserRole userRole) {
 		this.userAccount = accountID;
 		this.password = password;

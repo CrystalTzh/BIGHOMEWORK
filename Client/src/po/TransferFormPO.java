@@ -7,8 +7,9 @@ import state.Transport;
 
 public class TransferFormPO implements Serializable {
 	
+	long NO;
 	String putOnCarDate; //装车日期
-	long NO;//中转单编号
+	long relayFormNumber;//中转单编号
 	String startingpoint; //出发地
 	String destination; //到达地
 	String loadingMember; //监装员

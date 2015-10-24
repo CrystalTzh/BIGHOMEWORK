@@ -2,12 +2,12 @@ package po;
 
 import java.io.Serializable;
 
-public class AccountPO implements Serializable{
+public class AccountInfoPO implements Serializable{
 	long bankAccount;//银行账户
-	String password;//银行账户密码
+	int password;//银行账户密码
 	double balance;//余额
 	
-	public AccountPO(long bankAccount, String password
+	public AccountInfoPO(long bankAccount, int password
 			, double balance) {
 		this.bankAccount = bankAccount;
 		this.password = password;
@@ -18,7 +18,7 @@ public class AccountPO implements Serializable{
 		return bankAccount;
 	}
 
-	public String getPassword() {
+	public int getPassword() {
 		return password;
 	}
 
@@ -30,7 +30,7 @@ public class AccountPO implements Serializable{
 		this.bankAccount = bankAccount;
 	}
 
-	public void setPassword(String password) {
+	public void setPassword(int password) {
 		this.password = password;
 	}
 

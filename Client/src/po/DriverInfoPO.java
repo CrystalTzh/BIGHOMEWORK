@@ -2,22 +2,20 @@ package po;
 
 import java.io.Serializable;
 
+import state.SexList;
+
 public class DriverInfoPO implements Serializable{
 	
-	public enum sexlist{
-		MAN,WoMAN
-	}
-	
-	long driver;
+	long driverNumber;
 	String name;
 	String birthday;
 	String idcard;
 	long cellphone;
 	String licensedate;
-	sexlist sex;
+	SexList sex;
 	
-	public DriverInfoPO(long d, String n,String b,String i,long c,String l,sexlist s){
-		driver = d;
+	public DriverInfoPO(long d, String n,String b,String i,long c,String l,SexList s){
+		driverNumber = d;
 		name = n;
 		birthday = b;
 		idcard = i;
@@ -26,8 +24,36 @@ public class DriverInfoPO implements Serializable{
 		sex = s;
 	}
 
-	public long getDriver() {
-		return driver;
+	public void setDriverNumber(long driverNumber) {
+		this.driverNumber = driverNumber;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+
+	public void setIdcard(String idcard) {
+		this.idcard = idcard;
+	}
+
+	public void setCellphone(long cellphone) {
+		this.cellphone = cellphone;
+	}
+
+	public void setLicensedate(String licensedate) {
+		this.licensedate = licensedate;
+	}
+
+	public void setSex(SexList sex) {
+		this.sex = sex;
+	}
+
+	public long getDriverNumber() {
+		return driverNumber;
 	}
 
 	public String getName() {
@@ -50,7 +76,7 @@ public class DriverInfoPO implements Serializable{
 		return licensedate;
 	}
 
-	public sexlist getSex() {
+	public SexList getSex() {
 		return sex;
 	}
 }
