@@ -8,14 +8,12 @@ public class AccountInfoVO implements Serializable{
 	long bankAccount;//银行账户
 	int password;//银行账户密码
 	double balance;//余额
-	FormState formstate;//单据的状态
 	
 	public AccountInfoVO(long bankAccount, int password
-			, double balance, FormState formstate) {
+			, double balance) {
 		this.bankAccount = bankAccount;
 		this.password = password;
 		this.balance = balance;
-		this.formstate = formstate;
 	}
 
 	public long getBankAccount() {
@@ -42,13 +40,6 @@ public class AccountInfoVO implements Serializable{
 		this.balance = balance;
 	}
 
-	public FormState getFormstate() {
-		return formstate;
-	}
-
-	public void setFormstate(FormState formstate) {
-		this.formstate = formstate;
-	}
 	
 	
 }

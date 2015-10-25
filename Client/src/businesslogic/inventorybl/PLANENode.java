@@ -7,8 +7,9 @@ import state.Zone;
 
 public class PLANENode extends LocationNode {
 
-	public PLANENode(int line, int shelf, int tag, long ID) {
-		
+public PLANENode(Zone zone, int line, int shelf, int tag, long ID,
+			NodeState state) {
+		super(zone, line, shelf, tag, ID, state);
 		// TODO Auto-generated constructor stub
 		this.zone = Zone.PLANE;
 		this.state = NodeState.VACANT;
@@ -16,8 +17,10 @@ public class PLANENode extends LocationNode {
 		this.shelf = shelf;
 		this.tag = tag;
 		this.ID = ID;
-		
 	}
+
+	
+	
 	public NodeState add(long ID){
 		NodeState currentState = getState();
 		currentState = opposite(currentState);

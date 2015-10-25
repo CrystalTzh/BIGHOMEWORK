@@ -1,5 +1,6 @@
 package businesslogicservice.financeblservice;
 
+import state.FormState;
 import vo.AccountInfoVO;
 
 public interface AccountInfoFinanceblService {
@@ -7,4 +8,6 @@ public interface AccountInfoFinanceblService {
 	public boolean add(AccountInfoVO vo);
 	public boolean delete(AccountInfoVO vo);
 	public AccountInfoVO find(long bankAccount);
+	
+	public AccountInfoVO add(long bankAccount,int password);
 }

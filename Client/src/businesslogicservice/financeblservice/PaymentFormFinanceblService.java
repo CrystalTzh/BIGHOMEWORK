@@ -8,4 +8,6 @@ public interface PaymentFormFinanceblService {
 	public boolean PaymentFormsave (PaymentFormVO vo);
 	public boolean PaymentFormsubmit (PaymentFormVO vo);
 	public boolean PaymentFormwithdraw (PaymentFormVO vo);
+	
+	public PaymentFormVO PaymentFormcreate (String date,double money,String name,long account,long NO);
 }

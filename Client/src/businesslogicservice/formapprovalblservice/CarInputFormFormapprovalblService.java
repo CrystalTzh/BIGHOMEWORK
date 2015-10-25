@@ -4,6 +4,6 @@ import java.io.Serializable;
 
 import vo.CarInputFormVO;
 
-public interface CarInputFormFormapprovalblService extends Serializable {
+public interface CarInputFormFormapprovalblService {
 	public boolean CarInputFormjudge (CarInputFormVO vo);
 }

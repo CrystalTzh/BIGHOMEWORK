@@ -16,10 +16,10 @@ public class PaymentFormVO implements Serializable{
 	double salary;
 	double bonus;
 	int month;
-	String NO;
+	long NO;
 	FormState formstate;//单据的状态
 	
-	public PaymentFormVO(String d,double m,String n,long a,String N, FormState formstate){
+	public PaymentFormVO(String d,double m,String n,long a,long N, FormState formstate){
 		date = d;
 		money = m;
 		name = n;
@@ -44,7 +44,7 @@ public class PaymentFormVO implements Serializable{
 		return account;
 	}
 	
-	public String getNO(){
+	public long getNO(){
 		return NO;
 	}
 
@@ -124,7 +124,7 @@ public class PaymentFormVO implements Serializable{
 		this.month = month;
 	}
 
-	public void setNO(String nO) {
+	public void setNO(long nO) {
 		NO = nO;
 	}
 

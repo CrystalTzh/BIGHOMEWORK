@@ -8,4 +8,6 @@ public interface UserInfoUserblService {
 	public boolean delete(UserInfoVO vo);
 	public UserInfoVO find(long userAccount);
 	public UserInfoVO update();
+	
+	public boolean add (long userAccount, String password);
 }
