@@ -5,16 +5,16 @@ import java.util.ArrayList;
 
 public class BeginningAccountPO implements Serializable{
 	int year;//建立年份
-	ArrayList<UserPO> userInfo;//当前机构人员账户信息
+	ArrayList<UserInfoPO> userInfo;//当前机构人员账户信息
 	ArrayList<CarInfoPO> carInfo;//车辆信息
 	ArrayList<InventoryInfoPO> inventoryInfo;//库存信息
-	AccountPO accountInfo;//银行账户信息
+	AccountInfoPO accountInfo;//银行账户信息
 	
 	public BeginningAccountPO(int year,
-			ArrayList<UserPO> userInfo,
+			ArrayList<UserInfoPO> userInfo,
 			ArrayList<CarInfoPO> carInfo,
 			ArrayList<InventoryInfoPO> inventoryInfo,
-			AccountPO accountInfo) {
+			AccountInfoPO accountInfo) {
 		this.userInfo = userInfo;
 		this.carInfo = carInfo;
 		this.inventoryInfo = inventoryInfo;
@@ -32,7 +32,7 @@ public class BeginningAccountPO implements Serializable{
 	}
 
 
-	public ArrayList<UserPO> getUserInfo() {
+	public ArrayList<UserInfoPO> getUserInfo() {
 		return userInfo;
 	}
 
@@ -44,11 +44,11 @@ public class BeginningAccountPO implements Serializable{
 		return inventoryInfo;
 	}
 
-	public AccountPO getAccountInfo() {
+	public AccountInfoPO getAccountInfo() {
 		return accountInfo;
 	}
 
-	public void setUserInfo(ArrayList<UserPO> userInfo) {
+	public void setUserInfo(ArrayList<UserInfoPO> userInfo) {
 		this.userInfo = userInfo;
 	}
 
@@ -60,7 +60,7 @@ public class BeginningAccountPO implements Serializable{
 		this.inventoryInfo = inventoryInfo;
 	}
 
-	public void setAccountInfo(AccountPO accountInfo) {
+	public void setAccountInfo(AccountInfoPO accountInfo) {
 		this.accountInfo = accountInfo;
 	}
 	

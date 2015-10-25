@@ -4,7 +4,7 @@ import java.rmi.RemoteException;
 
 import po.OfficeArrivalFormPO;
 
-public interface OfficeArrivalFormService {
+public interface OfficeArrivalFormTransitdataService {
 
 	public OfficeArrivalFormPO find(long NO) throws RemoteException;
 
