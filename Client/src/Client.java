@@ -82,9 +82,9 @@ public class Client {
 //		AccountInfoFinanceblDriver accountInfoFinanceblDriver = new AccountInfoFinanceblDriver();
 //		accountInfoFinanceblDriver.driver(accountInfoFinanceblStub);
 		//2.测试PaymentFormFinanceblService
-		PaymentFormFinanceblStub paymentFormFinanceblStub = new PaymentFormFinanceblStub();
-		PaymentFormFinanceblDriver paymentFormFinanceblDriver = new PaymentFormFinanceblDriver();
-		paymentFormFinanceblDriver.driver(paymentFormFinanceblStub);
+//		PaymentFormFinanceblStub paymentFormFinanceblStub = new PaymentFormFinanceblStub();
+//		PaymentFormFinanceblDriver paymentFormFinanceblDriver = new PaymentFormFinanceblDriver();
+//		paymentFormFinanceblDriver.driver(paymentFormFinanceblStub);
 		//3.测试ReceiptFormFinanceblService
 //		ReceiptFormFinanceblStub receiptFormFinanceblStub = new ReceiptFormFinanceblStub();
 //		ReceiptFormFinanceblDriver receiptFormFinanceblDriver = new ReceiptFormFinanceblDriver();
@@ -104,9 +104,9 @@ public class Client {
 //		storageOutFormInventoryblDriver.driver(storageOutFormInventoryblStub);
 //测试userblService
 //测试UserInfoUserblService
-//		UserInfoUserblStub userInfoUserblStub = new UserInfoUserblStub();
-//		UserInfoUserblDriver userInfoUserblDriver = new UserInfoUserblDriver();
-//		userInfoUserblDriver.driver(userInfoUserblStub);
+		UserInfoUserblStub userInfoUserblStub = new UserInfoUserblStub();
+		UserInfoUserblDriver userInfoUserblDriver = new UserInfoUserblDriver();
+		userInfoUserblDriver.driver(userInfoUserblStub);
 //测试corporationblService
 //		//1.测试CarInfocorporationblService
 //		CarInfocorporationblStub carInfocorporationblStub = new CarInfocorporationblStub();

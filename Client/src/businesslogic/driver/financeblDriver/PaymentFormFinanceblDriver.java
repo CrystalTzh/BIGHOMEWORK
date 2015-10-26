@@ -9,5 +9,10 @@ public class PaymentFormFinanceblDriver {
 		PaymentFormVO paymentFormVO = paymentFormFinanceblStub.PaymentFormcreate("20151025", 2000, "徐文杰", 12345678, 1, 0,  null, 0, 0, null,0, 0);
 		FormState state = paymentFormVO.getFormstate();
 		System.out.println("The state of current form is "+state);
+		paymentFormFinanceblStub.PaymentFormcreate();
+		paymentFormFinanceblStub.PaymentFormcancel(paymentFormVO);
+		paymentFormFinanceblStub.PaymentFormsave(paymentFormVO);
+		paymentFormFinanceblStub.PaymentFormsubmit(paymentFormVO);
+		paymentFormFinanceblStub.PaymentFormwithdraw(paymentFormVO);
 	}
 }

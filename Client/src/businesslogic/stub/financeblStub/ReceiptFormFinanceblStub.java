@@ -11,30 +11,34 @@ public class ReceiptFormFinanceblStub implements ReceiptFormFinanceblService {
 	@Override
 	public ReceiptFormVO RecieptFormcreate() {
 		// TODO Auto-generated method stub
+		System.out.println("call RecieptFormcreate...");
 		return null;
 	}
 
 	@Override
 	public void RecieptFormcancel(ReceiptFormVO vo) {
 		// TODO Auto-generated method stub
-
+		System.out.println("call RecieptFormcancel...");
 	}
 
 	@Override
 	public boolean RecieptFormsave(ReceiptFormVO vo) {
 		// TODO Auto-generated method stub
+		System.out.println("call RecieptFormsave...");
 		return false;
 	}
 
 	@Override
 	public boolean RecieptFormsubmit(ReceiptFormVO vo) {
 		// TODO Auto-generated method stub
+		System.out.println("call RecieptFormsubmit...");
 		return false;
 	}
 
 	@Override
 	public boolean RecieptFormwithdraw(ReceiptFormVO vo) {
 		// TODO Auto-generated method stub
+		System.out.println("call RecieptFormwithdraw...");
 		return false;
 	}
 

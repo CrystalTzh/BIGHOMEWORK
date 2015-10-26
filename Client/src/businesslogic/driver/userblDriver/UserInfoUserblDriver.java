@@ -10,5 +10,10 @@ public class UserInfoUserblDriver {
 		if(isSuccessful){
 			System.out.println("The default account is "+userInfoVO.getUserAccount());
 		}
+		userInfoUserblStub.add(userInfoVO);
+		userInfoUserblStub.create();
+		userInfoUserblStub.delete(userInfoVO);
+		userInfoUserblStub.find(12345678);
+		userInfoUserblStub.update();
 	}
 }

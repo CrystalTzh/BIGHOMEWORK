@@ -11,30 +11,34 @@ public class PaymentFormFinanceblStub implements PaymentFormFinanceblService {
 	@Override
 	public PaymentFormVO PaymentFormcreate() {
 		// TODO Auto-generated method stub
+		System.out.println("Call PaymentFormcreate...");
 		return null;
 	}
 
 	@Override
 	public void PaymentFormcancel(PaymentFormVO vo) {
 		// TODO Auto-generated method stub
-
+		System.out.println("Call PaymentFormcancel...");
 	}
 
 	@Override
 	public boolean PaymentFormsave(PaymentFormVO vo) {
 		// TODO Auto-generated method stub
+		System.out.println("Call PaymentFormsave...");
 		return false;
 	}
 
 	@Override
 	public boolean PaymentFormsubmit(PaymentFormVO vo) {
 		// TODO Auto-generated method stub
+		System.out.println("Call PaymentFormsubmit...");
 		return false;
 	}
 
 	@Override
 	public boolean PaymentFormwithdraw(PaymentFormVO vo) {
 		// TODO Auto-generated method stub
+		System.out.println("Call PaymentFormwithdraw...");
 		return false;
 	}
 

@@ -9,5 +9,10 @@ public class StorageInFormInventoryblDriver {
 		if(isSuccessful){
 			System.out.println("StorageInFormInfo added successfully!");
 		}
+		StorageInFormInventoryblStub.StorageInFormcancel(null);
+		StorageInFormInventoryblStub.StorageInFormcreate();
+		StorageInFormInventoryblStub.StorageInFormsave(null);
+		StorageInFormInventoryblStub.StorageInFormsubmit(null);
+		StorageInFormInventoryblStub.StorageInFormwithdraw(null);
 	}
 }

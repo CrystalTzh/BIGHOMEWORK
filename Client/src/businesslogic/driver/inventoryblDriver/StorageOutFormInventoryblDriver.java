@@ -1,6 +1,7 @@
 package businesslogic.driver.inventoryblDriver;
 
 import state.Transport;
+import vo.StorageOutFormVO;
 import businesslogicservice.inventoryblservice.StorageOutFormInventoryblService;
 
 public class StorageOutFormInventoryblDriver {
@@ -9,5 +10,13 @@ public class StorageOutFormInventoryblDriver {
 		if(isSuccessful){
 			System.out.println("StorageOutFormInfo added successfully!");
 		}
+		StorageOutFormVO storageOutFormVO = new StorageOutFormVO();
+		
+		storageOutFormInventoryblStub.StorageOutFormcancel(storageOutFormVO);
+		storageOutFormInventoryblStub.StorageOutFormcreate();
+		storageOutFormInventoryblStub.StorageOutFormsave(storageOutFormVO);
+		storageOutFormInventoryblStub.StorageOutFormsubmit(storageOutFormVO);
+		storageOutFormInventoryblStub.StorageOutFormwithdraw(storageOutFormVO);
+		
 	}
 }
