@@ -1,9 +1,9 @@
 package businesslogic.stub.transitblStub;
 
-import businesslogicservice.transitblservice.TransferFormblService;
+import businesslogicservice.transitblservice.TransferFormTransitblService;
 import vo.TransferFormVO;
 
-public class TransferFormTransitblStub implements TransferFormblService{
+public class TransferFormTransitblStub implements TransferFormTransitblService{
 
 	@Override
 	public TransferFormVO TransferFormcreate() {

@@ -2,6 +2,7 @@ import businesslogic.driver.constblDriver.ConstInfoConstblDriver;
 import businesslogic.driver.financeblDriver.AccountInfoFinanceblDriver;
 import businesslogic.driver.financeblDriver.PaymentFormFinanceblDriver;
 import businesslogic.driver.financeblDriver.ReceiptFormFinanceblDriver;
+import businesslogic.driver.financeblDriver.ReceiptGatherFinanceblDriver;
 import businesslogic.driver.inventoryblDriver.InventoryInfoInventoryblDriver;
 import businesslogic.driver.inventoryblDriver.StorageInFormInventoryblDriver;
 import businesslogic.driver.inventoryblDriver.StorageOutFormInventoryblDriver;
@@ -10,32 +11,22 @@ import businesslogic.stub.constblStub.ConstInfoConstblStub;
 import businesslogic.stub.financeblStub.AccountInfoFinanceblStub;
 import businesslogic.stub.financeblStub.PaymentFormFinanceblStub;
 import businesslogic.stub.financeblStub.ReceiptFormFinanceblStub;
+import businesslogic.stub.financeblStub.ReceiptGatherFinanceblStub;
 import businesslogic.stub.inventoryblStub.InventoryInfoInventoryblStub;
 import businesslogic.stub.inventoryblStub.StorageInFormInventoryblStub;
 import businesslogic.stub.inventoryblStub.StorageOutFormInventoryblStub;
 import businesslogic.stub.userblStub.UserInfoUserblStub;
 import businesslogic.driver.corporationblDriver.CarInfocorporationblDriver;
-
 import businesslogic.driver.corporationblDriver.DriverInfocorporationblDriver;
-
 import businesslogic.driver.formapprovalblDriver.CarInputFormFormapprovalblDriver;
-
 import businesslogic.driver.formapprovalblDriver.CarOfficeFormFormapprovalblDriver;
-
 import businesslogic.driver.formapprovalblDriver.DeliveryFormFormapprovalblDriver;
-
 import businesslogic.driver.formapprovalblDriver.OfficeArrivalFormFormapprovalblDriver;
-
 import businesslogic.driver.formapprovalblDriver.OrderFormFormapprovalblDriver;
-
 import businesslogic.driver.formapprovalblDriver.PaymentFormFormapprovalblDriver;
-
 import businesslogic.driver.formapprovalblDriver.ReceiptFormFormapprovalblDriver;
-
 import businesslogic.driver.formapprovalblDriver.StorageInFormFormapprovalblDriver;
-
 import businesslogic.driver.formapprovalblDriver.StorageOutFormFormapprovalblDriver;
-
 import businesslogic.driver.formapprovalblDriver.StoreArrivalFormFormapprovalblDriver;
 import businesslogic.driver.formapprovalblDriver.TransferFormFormapprovalblDriver;
 import businesslogic.driver.transitblDriver.CarInputFormTransitblDriver;
@@ -89,6 +80,10 @@ public class Client {
 //		ReceiptFormFinanceblStub receiptFormFinanceblStub = new ReceiptFormFinanceblStub();
 //		ReceiptFormFinanceblDriver receiptFormFinanceblDriver = new ReceiptFormFinanceblDriver();
 //		receiptFormFinanceblDriver.driver(receiptFormFinanceblStub);
+		//4.测试ReceiptGatherFinanceblService
+		ReceiptGatherFinanceblStub receiptGatherFinanceblStub = new ReceiptGatherFinanceblStub();
+		ReceiptGatherFinanceblDriver receiptGatherFinanceblDriver = new ReceiptGatherFinanceblDriver();
+		receiptGatherFinanceblDriver.driver(receiptGatherFinanceblStub);
 //测试inventoryblService	
 		//1.测试InventoryInfoInventoryblSercice
 //		InventoryInfoInventoryblStub inventoryInfoInventoryblStub = new InventoryInfoInventoryblStub();
@@ -104,9 +99,9 @@ public class Client {
 //		storageOutFormInventoryblDriver.driver(storageOutFormInventoryblStub);
 //测试userblService
 //测试UserInfoUserblService
-		UserInfoUserblStub userInfoUserblStub = new UserInfoUserblStub();
-		UserInfoUserblDriver userInfoUserblDriver = new UserInfoUserblDriver();
-		userInfoUserblDriver.driver(userInfoUserblStub);
+//		UserInfoUserblStub userInfoUserblStub = new UserInfoUserblStub();
+//		UserInfoUserblDriver userInfoUserblDriver = new UserInfoUserblDriver();
+//		userInfoUserblDriver.driver(userInfoUserblStub);
 //测试corporationblService
 //		//1.测试CarInfocorporationblService
 //		CarInfocorporationblStub carInfocorporationblStub = new CarInfocorporationblStub();
