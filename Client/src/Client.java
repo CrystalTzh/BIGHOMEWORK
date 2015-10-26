@@ -1,3 +1,41 @@
+import java.rmi.RemoteException;
+
+import datadriver.constdatadriver.ConstdataDriver;
+import datadriver.corporationdatadriver.CarInfoCorporationdataDriver;
+import datadriver.corporationdatadriver.DriverInfoCorporationdataDriver;
+import datadriver.financedatadriver.AccountInfodataDriver;
+import datadriver.financedatadriver.BeginningAccountdataDriver;
+import datadriver.financedatadriver.CostPayChartdataDriver;
+import datadriver.financedatadriver.PaymentFormdataDriver;
+import datadriver.financedatadriver.ReceiptFormdataDriver;
+import datadriver.inventorydatadriver.InventoryInfoInventorydataDriver;
+import datadriver.inventorydatadriver.StorageInFormInventorydataDriver;
+import datadriver.inventorydatadriver.StorageOutFormInventorydataDriver;
+import datadriver.transitdatadriver.CarInputTransitFormdataDriver;
+import datadriver.transitdatadriver.CarOfficeTransitdataDriver;
+import datadriver.transitdatadriver.DeliveryFormTransitdataDriver;
+import datadriver.transitdatadriver.OfficeArrivalFormTransitdataDriver;
+import datadriver.transitdatadriver.OrderFormTransitdataDriver;
+import datadriver.transitdatadriver.StoreArrivalFormTransitdataDriver;
+import datadriver.userdatadriver.UserdataDriver;
+import datastub.constdatastub.ConstdataStub;
+import datastub.corporationdatastub.CarInfoCorporationdataStub;
+import datastub.corporationdatastub.DriverInfoCorporationdataStub;
+import datastub.financedatastub.AccountInfodataStub;
+import datastub.financedatastub.BeginningAccountdataStub;
+import datastub.financedatastub.CostPayChartdataStub;
+import datastub.financedatastub.PaymentFormdataStub;
+import datastub.financedatastub.ReceiptFormdataStub;
+import datastub.inventorydatastub.InventoryInfoInventorydataStub;
+import datastub.inventorydatastub.StorageInFormInventorydataStub;
+import datastub.inventorydatastub.StorageOutFormInventorydataStub;
+import datastub.transitdatastub.CarInputTransitFormdataStub;
+import datastub.transitdatastub.CarOfficeTransitdataStub;
+import datastub.transitdatastub.DeliveryFormTransitdataStub;
+import datastub.transitdatastub.OfficeArrivalFormTransitdataStub;
+import datastub.transitdatastub.OrderFormTransitdataStub;
+import datastub.transitdatastub.StoreArrivalFormTransitdataStub;
+import datastub.userdatastub.UserdataStub;
 import businesslogic.driver.constblDriver.ConstInfoConstblDriver;
 import businesslogic.driver.financeblDriver.AccountInfoFinanceblDriver;
 import businesslogic.driver.financeblDriver.PaymentFormFinanceblDriver;
@@ -60,7 +98,7 @@ import businesslogic.stub.formapprovalblStub.StorageInFormFormapprovalblStub;
 
 public class Client {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws RemoteException {
 		// TODO Auto-generated method stub
 //测试constblservice
 		//测试ConstInfoConstblService
@@ -81,9 +119,9 @@ public class Client {
 //		ReceiptFormFinanceblDriver receiptFormFinanceblDriver = new ReceiptFormFinanceblDriver();
 //		receiptFormFinanceblDriver.driver(receiptFormFinanceblStub);
 		//4.测试ReceiptGatherFinanceblService
-		ReceiptGatherFinanceblStub receiptGatherFinanceblStub = new ReceiptGatherFinanceblStub();
-		ReceiptGatherFinanceblDriver receiptGatherFinanceblDriver = new ReceiptGatherFinanceblDriver();
-		receiptGatherFinanceblDriver.driver(receiptGatherFinanceblStub);
+//		ReceiptGatherFinanceblStub receiptGatherFinanceblStub = new ReceiptGatherFinanceblStub();
+//		ReceiptGatherFinanceblDriver receiptGatherFinanceblDriver = new ReceiptGatherFinanceblDriver();
+//		receiptGatherFinanceblDriver.driver(receiptGatherFinanceblStub);
 //测试inventoryblService	
 		//1.测试InventoryInfoInventoryblSercice
 //		InventoryInfoInventoryblStub inventoryInfoInventoryblStub = new InventoryInfoInventoryblStub();
@@ -238,8 +276,83 @@ public class Client {
 //		TransferFormTransitblDriver transferFormTransitblDriver = new 
 //				TransferFormTransitblDriver();
 //		transferFormTransitblDriver.drive(transferFormTransitblStub);
-				
+		
+//		ConstdataStub constdataStub = new ConstdataStub();
+//		ConstdataDriver constdataDriver = new ConstdataDriver();
+//		constdataDriver.driver(constdataStub);
+//	
+//		DriverInfoCorporationdataStub driverInfoCorporationdataStub = new DriverInfoCorporationdataStub();
+//		DriverInfoCorporationdataDriver driverInfoCorporationdataDriver = new DriverInfoCorporationdataDriver();
+//		driverInfoCorporationdataDriver.driver(driverInfoCorporationdataStub);
+//		
+//		BeginningAccountdataStub beginningAccountdataStub = new BeginningAccountdataStub();
+//		BeginningAccountdataDriver beginningAccountdataDriver = new BeginningAccountdataDriver();
+//		beginningAccountdataDriver.driver(beginningAccountdataStub);
+//		
+//		
+//		PaymentFormdataStub paymentFormdataStub = new PaymentFormdataStub();
+//		PaymentFormdataDriver paymentFormdataDriver = new PaymentFormdataDriver();
+//		paymentFormdataDriver.driver(paymentFormdataStub);
+//		
+//		InventoryInfoInventorydataStub inventoryInfoInventorydataStub= new InventoryInfoInventorydataStub();
+//		InventoryInfoInventorydataDriver  inventoryInfoInventorydataDriver  = new InventoryInfoInventorydataDriver();
+//		inventoryInfoInventorydataDriver.driver(inventoryInfoInventorydataStub);
+//		
+//		
+//		StorageOutFormInventorydataStub storageOutFormInventorydataStub = new StorageOutFormInventorydataStub();
+//		StorageOutFormInventorydataDriver storageOutFormInventorydataDriver = new StorageOutFormInventorydataDriver();
+//		storageOutFormInventorydataDriver.driver(storageOutFormInventorydataStub);
+//		
+//		CarOfficeTransitdataStub  carOfficeTransitdataStub  = new CarOfficeTransitdataStub();
+//		CarOfficeTransitdataDriver  carOfficeTransitdataDriver = new CarOfficeTransitdataDriver();
+//		carOfficeTransitdataDriver.driver(carOfficeTransitdataStub );
+//	
+//		
+//		OfficeArrivalFormTransitdataStub  officeArrivalFormTransitdataStub  = new OfficeArrivalFormTransitdataStub();
+//		OfficeArrivalFormTransitdataDriver   officeArrivalFormTransitdataDriver = new OfficeArrivalFormTransitdataDriver();
+//		officeArrivalFormTransitdataDriver.driver(officeArrivalFormTransitdataStub );
+//		
+//		StoreArrivalFormTransitdataStub  storeArrivalFormTransitdataStub  = new StoreArrivalFormTransitdataStub();
+//		StoreArrivalFormTransitdataDriver   storeArrivalFormTransitdataDriver= new StoreArrivalFormTransitdataDriver();
+//		storeArrivalFormTransitdataDriver.driver(storeArrivalFormTransitdataStub);
+//		
+//		
+//		UserdataStub  userdataStub = new UserdataStub();
+//		UserdataDriver   userdataDriver= new UserdataDriver();
+//		userdataDriver.driver(userdataStub);
 
+//		CarInfoCorporationdataStub carInfoCorporationdataStub = new CarInfoCorporationdataStub();
+//		CarInfoCorporationdataDriver carInfoCorporationdataDriver = new CarInfoCorporationdataDriver();
+//		carInfoCorporationdataDriver.driver(carInfoCorporationdataStub);
+//		
+//		AccountInfodataStub accountInfodataStub = new AccountInfodataStub();
+//		AccountInfodataDriver accountInfodataDriver = new AccountInfodataDriver();
+//		accountInfodataDriver.driver(accountInfodataStub);
+//		
+//		CostPayChartdataStub costPayChartdataStub = new CostPayChartdataStub();
+//		CostPayChartdataDriver costPayChartdataDriver = new CostPayChartdataDriver();
+//		costPayChartdataDriver.driver(costPayChartdataStub);
+//		
+//		ReceiptFormdataStub receiptFormdataStub = new ReceiptFormdataStub();
+//		ReceiptFormdataDriver receiptFormdataDriver = new ReceiptFormdataDriver();
+//		receiptFormdataDriver.driver(receiptFormdataStub);
+//		
+//		StorageInFormInventorydataStub storageInFormInventorydataStub = new StorageInFormInventorydataStub();
+//		StorageInFormInventorydataDriver storageInFormInventorydataDriver = new StorageInFormInventorydataDriver();
+//		storageInFormInventorydataDriver.driver(storageInFormInventorydataStub);
+//		
+//		CarInputTransitFormdataStub carInputTransitFormdataStub = new CarInputTransitFormdataStub();
+//		CarInputTransitFormdataDriver carInputTransitFormdataDriver = new CarInputTransitFormdataDriver();
+//		carInputTransitFormdataDriver.driver(carInputTransitFormdataStub);
+//		
+//		DeliveryFormTransitdataStub deliveryFormTransitdataStub = new DeliveryFormTransitdataStub();
+//		DeliveryFormTransitdataDriver deliveryFormTransitdataDriver = new DeliveryFormTransitdataDriver();
+//		deliveryFormTransitdataDriver.driver(deliveryFormTransitdataStub);
+//		
+//		OrderFormTransitdataStub orderFormTransitdataStub = new OrderFormTransitdataStub();
+//		OrderFormTransitdataDriver orderFormTransitdataDriver = new OrderFormTransitdataDriver();
+//		orderFormTransitdataDriver.driver(orderFormTransitdataStub);
+		
 	}
 
 }
