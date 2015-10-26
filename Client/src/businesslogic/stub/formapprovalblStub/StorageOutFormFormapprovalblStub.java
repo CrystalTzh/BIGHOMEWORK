@@ -8,6 +8,7 @@ public class StorageOutFormFormapprovalblStub implements StorageOutFormFormappro
 	@Override
 	public boolean StorageOutFormjudge(StorageOutFormVO vo) {
 		// TODO print "Judge StorageOutForm successfully!"
+		System.out.println("Call StorageOutFormjudge...");
 		return true;
 	}
 	

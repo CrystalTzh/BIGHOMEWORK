@@ -8,6 +8,7 @@ public class DeliveryFormFormapprovalblStub implements DeliveryFormFormapprovalb
 	@Override
 	public boolean DeliveryFormjudge(DeliveryFormVO vo) {
 		// TODO print "Judge DeliveryForm successfully!"
+		System.out.println("Call DeliveryFormjudge...");
 		return true;
 	}
 

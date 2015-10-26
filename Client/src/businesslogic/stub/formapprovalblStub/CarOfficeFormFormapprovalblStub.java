@@ -8,7 +8,9 @@ public class CarOfficeFormFormapprovalblStub implements CarOfficeFormFormapprova
 	@Override
 	public boolean CarOfficeFormjudge(CarOfficeFormVO vo) {
 		// TODO print "Judge CarOfficeForm successfully!"
+		System.out.println("Call CarInputFormjudge...");
 		return true;
+		
 	}
 
 }

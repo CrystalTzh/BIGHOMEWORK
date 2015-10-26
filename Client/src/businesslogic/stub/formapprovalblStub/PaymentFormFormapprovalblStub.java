@@ -8,6 +8,7 @@ public class PaymentFormFormapprovalblStub implements PaymentFormFormapprovalblS
 	@Override
 	public boolean PaymentFormjudge(PaymentFormVO vo) {
 		// TODO print "Judge PaymentForm successfully!"
+		System.out.println("Call PaymentFormjudge...");
 		return true;
 	}
 

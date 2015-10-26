@@ -8,6 +8,7 @@ public class StorageInFormFormapprovalblStub implements StorageInFormFormapprova
 	@Override
 	public boolean StorageInFormjudge(StorageInFormVO vo) {
 		// TODO print "Judge StorageInForm successfully!"
+		System.out.println("Call StorageInFormjudge...");
 		return true;
 	}
 
