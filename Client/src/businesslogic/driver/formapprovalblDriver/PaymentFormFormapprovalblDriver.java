@@ -12,7 +12,7 @@ public class PaymentFormFormapprovalblDriver {
 		allNO.add((long) 1);
 		allNO.add((long) 2);
 		allNO.add((long) 3);
-		PaymentFormVO paymentFormVO = new PaymentFormVO("date", 1.0,
+		PaymentFormVO paymentFormVO = new PaymentFormVO("date", 1,
 				"name", 12345, 5000.00, 2013, 2000.00, allNO, 500000.00, 
 				10000, "2013年12月", 23456, FormState.SUBMITTED);
 		if(paymentFormFormapprovalblStub.PaymentFormjudge(paymentFormVO))

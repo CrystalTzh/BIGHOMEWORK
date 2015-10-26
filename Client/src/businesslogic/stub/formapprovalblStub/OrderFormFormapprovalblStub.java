@@ -8,6 +8,7 @@ public class OrderFormFormapprovalblStub implements OrderFormFormapprovalblServi
 	@Override
 	public boolean OrderFormjudge(OrderFormVO vo) {
 		// TODO print "Judge OderForm successfully!"
+		System.out.println("Call OrderFormjudge...");
 		return true;
 	}
 

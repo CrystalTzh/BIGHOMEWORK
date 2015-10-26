@@ -8,30 +8,35 @@ public class StoreArrivalFormTransitblStub implements StoreArrivalFormTransitblS
 	@Override
 	public StoreArrivalFormVO StoreArrivalFormcreate() {
 		// TODO Auto-generated method stub
+		System.out.println("Call StoreArrivalFormcreate...");
 		return null;
 	}
 
 	@Override
 	public void StoreArrivalFormcancel(StoreArrivalFormVO vo) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Call StoreArrivalFormcancel...");
 	}
 
 	@Override
 	public boolean StoreArrivalFormsave(StoreArrivalFormVO vo) {
 		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+		System.out.println("Call StoreArrivalFormsave...");
 		return false;
 	}
 
 	@Override
 	public boolean StoreArrivalFormsubmit(StoreArrivalFormVO vo) {
 		// TODO print "Submit successfully!"
+		System.out.println("Call StoreArrivalFormsubmit...");
 		return true;
 	}
 
 	@Override
 	public boolean StoreArrivalFormwithdraw(StoreArrivalFormVO vo) {
 		// TODO Auto-generated method stub
+		System.out.println("Call StoreArrivalFormwithdraw...");
 		return false;
 	}
 

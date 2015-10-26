@@ -8,6 +8,7 @@ public class TransferFormFormapprovalblStub implements TransferFormFormapprovalb
 	@Override
 	public boolean TransferFormjudge(TransferFormVO vo) {
 		// TODO print "judge TransferForm successfully!"
+		System.out.println("Call TransferFormjudge...");
 		return true;
 	}
 	

@@ -8,6 +8,7 @@ public class OfficeArrivalFormFormapprovalblStub implements OfficeArrivalFormFor
 	@Override
 	public boolean OfficeArrivalFormjudge(OfficeArrivalFormVO vo) {
 		// TODO print "Judge OfficeArrivalForm successfully!"
+		System.out.println("Call OfficeArrivalFormjudge...");
 		return true;
 	}
 	

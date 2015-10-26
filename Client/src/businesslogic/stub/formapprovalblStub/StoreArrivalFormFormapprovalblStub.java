@@ -8,6 +8,7 @@ public class StoreArrivalFormFormapprovalblStub implements StoreArrivalFormForma
 	@Override
 	public boolean StoreArrivalFormjudge(StoreArrivalFormVO vo) {
 		// TODO print "Judge StoreArrivalForm successfully!"
+		System.out.println("Call StoreArrivalFormjudge...");
 		return true;
 	}
 
