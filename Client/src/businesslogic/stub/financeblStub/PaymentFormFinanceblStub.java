@@ -1,5 +1,7 @@
 package businesslogic.stub.financeblStub;
 
+import java.util.ArrayList;
+
 import state.FormState;
 import vo.PaymentFormVO;
 import businesslogicservice.financeblservice.PaymentFormFinanceblService;
@@ -38,12 +40,16 @@ public class PaymentFormFinanceblStub implements PaymentFormFinanceblService {
 
 	@Override
 	public PaymentFormVO PaymentFormcreate(String date, double money,
-			String name, long account, long NO) {
+			String name, long account,  double rent, int year,ArrayList<Long> allNO, double salary,
+			double bonus, String payDate,long NO,double freight) {
 		// TODO Auto-generated method stub
 		PaymentFormVO p = null;
-		p = new PaymentFormVO(date,money,name,account,NO,FormState.EDITABLE);
+		p = new PaymentFormVO(date, money, name, account, 
+				rent, year, allNO, salary,
+				bonus, payDate, NO,freight,FormState.EDITABLE);
 		return p;
 	}
+
 	
 
 }

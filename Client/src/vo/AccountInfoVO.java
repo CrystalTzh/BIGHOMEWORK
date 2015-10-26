@@ -9,6 +9,8 @@ public class AccountInfoVO implements Serializable{
 	int password;//银行账户密码
 	double balance;//余额
 	
+	public AccountInfoVO(){}
+	
 	public AccountInfoVO(long bankAccount, int password
 			, double balance) {
 		this.bankAccount = bankAccount;
@@ -39,7 +41,6 @@ public class AccountInfoVO implements Serializable{
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
-
 	
 	
 }

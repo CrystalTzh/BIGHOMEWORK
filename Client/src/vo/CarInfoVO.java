@@ -11,16 +11,17 @@ public class CarInfoVO implements Serializable{
 	String chassisNumber;
 	String buyTime;
 	String activeTime;
-	FormState formstate;//单据的状态
 	
-	public CarInfoVO(String c,String p,String e,String ch,String b,String a, FormState formstate){
+	public CarInfoVO() {}
+	
+	public CarInfoVO(String c,String p,String e,String ch,String b,String a){
 		carNumber = c;
 		plateNumber = p;
 		engineNUmber = e;
 		chassisNumber = ch;
 		buyTime = b;
 		activeTime = a;
-		this.formstate = formstate;
+//		this.formstate = formstate;
 	}
 
 	public String getCarNumber() {
@@ -47,9 +48,9 @@ public class CarInfoVO implements Serializable{
 		return activeTime;
 	}
 
-	public FormState getFormstate() {
-		return formstate;
-	}
+//	public FormState getFormstate() {
+//		return formstate;
+//	}
 
 	public void setCarNumber(String carNumber) {
 		this.carNumber = carNumber;
@@ -74,9 +75,9 @@ public class CarInfoVO implements Serializable{
 	public void setActiveTime(String activeTime) {
 		this.activeTime = activeTime;
 	}
-
-	public void setFormstate(FormState formstate) {
-		this.formstate = formstate;
-	}
+//
+//	public void setFormstate(FormState formstate) {
+//		this.formstate = formstate;
+//	}
 	
 }

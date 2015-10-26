@@ -17,6 +17,7 @@ public class CarInputFormVO implements Serializable {
 	double transCharge; //运费
 	FormState formstate;//单据的状态
 	
+	public CarInputFormVO() {}
 	
 	public CarInputFormVO(long NO,String destination,String motorNumber,
 			String carNumber,String loadingMember,

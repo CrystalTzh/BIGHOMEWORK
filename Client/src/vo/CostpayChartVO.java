@@ -11,6 +11,8 @@ public class CostpayChartVO implements Serializable{
 	String NO;
 	FormState formstate;//单据的状态
 	
+	public CostpayChartVO() {}
+	
 	public CostpayChartVO(double i,double c,double p,String N, FormState formstate){
 		income = i;
 		cost = c;

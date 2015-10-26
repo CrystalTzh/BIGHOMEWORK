@@ -4,6 +4,6 @@ import java.io.Serializable;
 
 import vo.ReceiptFormVO;
 
-public interface ReceiptFormFormapprovalblService extends Serializable {
+public interface ReceiptFormFormapprovalblService{
 	public boolean ReceiptFormjudge (ReceiptFormVO vo);
 }

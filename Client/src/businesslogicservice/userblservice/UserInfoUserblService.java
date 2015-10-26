@@ -9,5 +9,5 @@ public interface UserInfoUserblService {
 	public UserInfoVO find(long userAccount);
 	public UserInfoVO update();
 	
-	public boolean add (long userAccount, String password);
+	public boolean add (String userAccount, String password);
 }

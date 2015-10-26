@@ -14,6 +14,8 @@ public class OfficeArrivalFormVO implements Serializable{
 	State state; //货物到达状态
 	FormState formstate;//单据的状态
 
+	public OfficeArrivalFormVO() {}
+	
 	public OfficeArrivalFormVO(long NO, String arriveDate,
 			long relayformnumber, String startingpoint,
 			String destination, State state, FormState formstate) {

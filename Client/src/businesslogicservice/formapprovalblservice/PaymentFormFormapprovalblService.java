@@ -4,6 +4,6 @@ import java.io.Serializable;
 
 import vo.PaymentFormVO;
 
-public interface PaymentFormFormapprovalblService extends Serializable {
+public interface PaymentFormFormapprovalblService{
 	public boolean PaymentFormjudge (PaymentFormVO vo);
 }

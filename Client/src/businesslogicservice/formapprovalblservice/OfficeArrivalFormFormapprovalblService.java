@@ -4,6 +4,6 @@ import java.io.Serializable;
 
 import vo.OfficeArrivalFormVO;
 
-public interface OfficeArrivalFormFormapprovalblService extends Serializable {
+public interface OfficeArrivalFormFormapprovalblService{
 	public boolean OfficeArrivalFormjudge (OfficeArrivalFormVO vo);
 }

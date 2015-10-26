@@ -11,6 +11,8 @@ public class UserInfoVO implements Serializable{
 	UserRole userRole;//用户类型（依据职业）
 	FormState formstate;//单据的状态
 	
+	public UserInfoVO() {}
+	
 	public UserInfoVO(long accountID, String password, 
 			UserRole userRole, FormState formstate) {
 		this.userAccount = accountID;

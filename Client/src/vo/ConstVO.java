@@ -13,15 +13,8 @@ public  class ConstVO implements Serializable{
 	double salaryEachOutCity;//司机跨市计次
 	FormState formstate;//单据的状态
 	
-	public ConstVO(){
-		distancePrice = 2.0;
-		baseSalary = 2000;
-		receiveExpressPrize = 1;
-		sendExpressPrize = 0.5;
-		salaryEachInCity = 50;
-		salaryEachOutCity = 200;
-		formstate = FormState.EDITABLE;
-	}
+	public ConstVO() {}
+	
 	public ConstVO(double dp, double bs, double rep, double sep, 
 			double sei, double seo, FormState formstate) {
 		distancePrice = dp;

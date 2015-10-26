@@ -13,6 +13,7 @@ public class BeginningAccountVO implements Serializable{
 	AccountInfoVO accountInfo;//银行账户信息
 	FormState formstate;//单据的状态
 	
+	public BeginningAccountVO() {}
 	
 	public BeginningAccountVO(int year,
 			ArrayList<UserInfoVO> userInfo,

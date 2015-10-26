@@ -1,6 +1,6 @@
 package businesslogic.stub.constblStub;
 
-import vo.ConstVO;
+import vo.ConstInfoVO;
 import businesslogicservice.constblservice.ConstInfoConstblService;
 
 public class ConstInfoConstblStub implements ConstInfoConstblService{
@@ -12,16 +12,18 @@ public class ConstInfoConstblStub implements ConstInfoConstblService{
 	double salaryEachOutCity;//司机跨市计次
 	
 	@Override
-	public ConstVO find() {
+	public ConstInfoVO find() {
 		// TODO Auto-generated method stub
-		ConstVO constvo = new ConstVO();		
-		return constvo;
+		ConstInfoVO constInfovo = new ConstInfoVO();		
+		return constInfovo;
 	}
 
 	@Override
-	public ConstVO update() {
+	public ConstInfoVO update() {
 		// TODO Auto-generated method stub
-		return null;
+		ConstInfoVO constInfoVO = new ConstInfoVO();
+		System.out.println("Update successfully!");
+		return constInfoVO;
 	}
 
 }

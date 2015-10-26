@@ -11,6 +11,9 @@ public class StorageInFormVO implements  Serializable{
 		String destination;
 		String position;
 		FormState formstate;//单据的状态
+		
+		public StorageInFormVO()
+		{}
 	
 		public  StorageInFormVO(String da,long i,String de,String p, FormState formstate){
 			date=da;

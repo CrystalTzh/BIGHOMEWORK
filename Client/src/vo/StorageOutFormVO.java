@@ -12,6 +12,8 @@ public class StorageOutFormVO implements  Serializable{
 	String position;
 	FormState formstate;//单据的状态
 	
+	public StorageOutFormVO() {}
+	
 	public  StorageOutFormVO(String da,long i,String de,String p, FormState formstate){
 		date=da;
 		expressNumber=i;

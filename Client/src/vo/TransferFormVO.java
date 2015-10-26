@@ -23,7 +23,7 @@ public class TransferFormVO implements Serializable {
 	double transCharge; //运费
 	FormState formstate;//单据的状态
 	
-	
+	public TransferFormVO() {}
 	public TransferFormVO(String putOnCarDate,long NO,String startingpoint,
 			String destination,String loadingMember,Transport transport,
 			String zone,int line,int shelf,int tag,ArrayList<Long> allIDs,

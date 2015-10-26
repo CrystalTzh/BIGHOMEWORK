@@ -32,6 +32,8 @@ public class OrderFormVO implements Serializable {
 	String realReceiveDate;//实际收件日期
 	FormState formstate;//单据的状态
 	
+	public OrderFormVO() {}
+	
 	public OrderFormVO (String sendername, 
 			String senderaddress, String sendercompany, 
 			String sendertel, String sendermobiletel, 

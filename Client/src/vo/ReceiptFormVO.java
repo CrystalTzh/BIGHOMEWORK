@@ -6,18 +6,20 @@ import java.util.ArrayList;
 import state.FormState;
 
 public class ReceiptFormVO implements  Serializable{
-	String date;
-	double money;
-	String expressname;
-	ArrayList<Long> id;
+	String date;//收款日期
+	double money;//收款金额
+	String expressManNumber;//收款快递员
+	ArrayList<Long> ID;
 	long NO;
 	FormState formstate;//单据的状态
+	
+	public ReceiptFormVO() {}
 	
 	public ReceiptFormVO(String d,double m,String e,ArrayList<Long> i,long NO, FormState formstate){
 		date = d;
 		money = m;
-		expressname = e;
-		id = i;
+		expressManNumber = e;
+		ID = i;
 		this.NO = NO; 
 		this.formstate = formstate;
 	}
@@ -30,15 +32,15 @@ public class ReceiptFormVO implements  Serializable{
 		return money;
 	}
 
-	public String getExpressname() {
-		return expressname;
+	public String getExpressManNumber() {
+		return expressManNumber;
 	}
 
-	public ArrayList<Long> getId() {
-		return id;
+	public ArrayList<Long> getID() {
+		return ID;
 	}
-	
-	public long getNO(){
+
+	public long getNO() {
 		return NO;
 	}
 
@@ -54,12 +56,12 @@ public class ReceiptFormVO implements  Serializable{
 		this.money = money;
 	}
 
-	public void setExpressname(String expressname) {
-		this.expressname = expressname;
+	public void setExpressManNumber(String expressManNumber) {
+		this.expressManNumber = expressManNumber;
 	}
 
-	public void setId(ArrayList<Long> id) {
-		this.id = id;
+	public void setID(ArrayList<Long> iD) {
+		ID = iD;
 	}
 
 	public void setNO(long nO) {
@@ -69,5 +71,4 @@ public class ReceiptFormVO implements  Serializable{
 	public void setFormstate(FormState formstate) {
 		this.formstate = formstate;
 	}
-	
 }

@@ -19,6 +19,6 @@ public interface InventoryInfoInventoryblSercice {
 	
 	public InventoryInfoVO inventoryCounting(Zone zone);
 	
-	public InventoryInfoVO add(ArrayList<LocationNode> locationNode,double limit,Zone emptyZone);
+	public InventoryInfoVO add(ArrayList<LocationNode> locationNode,double limit);
 	
 }

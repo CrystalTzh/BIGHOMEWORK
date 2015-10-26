@@ -18,6 +18,8 @@ public class CarOfficeFormVO implements Serializable{
 	long transitChange;//运费
 	FormState formstate;//单据的状态
 	
+	public CarOfficeFormVO() {}
+	
 	public CarOfficeFormVO(long NO, String putOnCarDate, 
 			String officeNumber, String motorNumber,
 			String destiantion, String carNumber,

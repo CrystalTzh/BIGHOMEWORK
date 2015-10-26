@@ -1,10 +1,10 @@
 package businesslogicservice.constblservice;
 
-import vo.ConstVO;
+import vo.ConstInfoVO;
 
 public interface ConstInfoConstblService {
 	
-	public ConstVO find();
+	public ConstInfoVO find();
 	
-	public ConstVO update();
+	public ConstInfoVO update();
 }

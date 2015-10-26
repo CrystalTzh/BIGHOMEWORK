@@ -36,7 +36,7 @@ public class UserInfoUserblStub implements UserInfoUserblService {
 	}
 
 	@Override
-	public boolean add(long userAccount, String password) {
+	public boolean add(String userAccount, String password) {
 		// TODO Auto-generated method stub
 		return true;
 	}

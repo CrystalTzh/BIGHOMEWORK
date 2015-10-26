@@ -4,6 +4,6 @@ import java.io.Serializable;
 
 import vo.StorageInFormVO;
 
-public interface StorageInFormFormapprovalblService extends Serializable {
+public interface StorageInFormFormapprovalblService{
 	public boolean StorageInFormjudge (StorageInFormVO vo);
 }

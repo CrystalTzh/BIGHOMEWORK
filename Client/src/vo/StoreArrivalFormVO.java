@@ -15,6 +15,8 @@ public class StoreArrivalFormVO implements Serializable {
 	State state; //货物到达状态
 	FormState formstate;//单据的状态
 	
+	public StoreArrivalFormVO () {}
+	
 	public StoreArrivalFormVO(long NO, long relayformnumber, String arriveDate, String relaynumber, State state, String startingPoint, FormState formstate) {
 		super();
 		// TODO Auto-generated constructor stub

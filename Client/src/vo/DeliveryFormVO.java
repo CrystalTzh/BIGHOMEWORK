@@ -11,6 +11,8 @@ public class DeliveryFormVO implements Serializable{
 	String deliveryMan;//派送员
 	FormState formstate;//单据的状态
 	
+	public DeliveryFormVO() {}
+	
 	public DeliveryFormVO(String arrivaeDate,
 			long ID, String deliveryMan, FormState formstate) {
 		this.arrivaeDate = arrivaeDate;

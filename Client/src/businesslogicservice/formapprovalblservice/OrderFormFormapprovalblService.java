@@ -4,6 +4,6 @@ import java.io.Serializable;
 
 import vo.OrderFormVO;
 
-public interface OrderFormFormapprovalblService extends Serializable {
+public interface OrderFormFormapprovalblService{
 	public boolean OrderFormjudge (OrderFormVO vo);
 }

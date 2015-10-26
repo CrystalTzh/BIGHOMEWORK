@@ -12,6 +12,8 @@ public class ProfitChartVO implements Serializable {
 	long NO;
 	FormState formstate;//单据的状态
 	
+	public ProfitChartVO() {}
+	
 	public ProfitChartVO(ArrayList<PaymentFormVO> paymentformvo, 
 			ArrayList<ReceiptFormVO> receiptformvo, long NO, FormState formstate) {
 		super();

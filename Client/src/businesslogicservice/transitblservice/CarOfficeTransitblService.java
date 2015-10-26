@@ -1,11 +1,11 @@
 package businesslogicservice.transitblservice;
 
-import vo.CarOfficeVO;
+import vo.CarOfficeFormVO;
 
 public interface CarOfficeTransitblService {
-	public CarOfficeVO CarOfficeFormcreate ();
-	public void CarOfficeFormcancel (CarOfficeVO vo);
-	public boolean CarOfficeFormsave (CarOfficeVO vo);
-	public boolean CarOfficeFormsubmit (CarOfficeVO vo);
-	public boolean CarOfficeFormwithdraw (CarOfficeVO vo);
+	public CarOfficeFormVO CarOfficeFormcreate ();
+	public void CarOfficeFormcancel (CarOfficeFormVO vo);
+	public boolean CarOfficeFormsave (CarOfficeFormVO vo);
+	public boolean CarOfficeFormsubmit (CarOfficeFormVO vo);
+	public boolean CarOfficeFormwithdraw (CarOfficeFormVO vo);
 }

@@ -1,30 +1,43 @@
 package vo;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 import state.FormState;
 
 public class PaymentFormVO implements Serializable{
-	String date;
-	double money;
-	String name;
-	long account;
-	double rent;
-	int year;
-	double freight;
-	long id;
-	double salary;
-	double bonus;
-	int month;
-	long NO;
+	String date;//付款日期
+	double money;//付款金额
+	String name;//付款人
+	long account;//付款账号
+	double rent;//租金
+	int year;//租金年份
+	double freight;//运费
+	ArrayList<Long> allNO;//运单号：中转单TransferForm、营业厅装车单CarOfficeForm、中转中心装车单CarInputForm
+	double salary;//人员工资
+	double bonus;//奖励
+	String payDate;//工资年月
+	long NO;//编号
 	FormState formstate;//单据的状态
 	
-	public PaymentFormVO(String d,double m,String n,long a,long N, FormState formstate){
-		date = d;
-		money = m;
-		name = n;
-		account = a;
-		NO = N;
+	public PaymentFormVO() {
+		
+	}
+	
+	public PaymentFormVO(String date, double money, String name, long account, 
+			double rent, int year, ArrayList<Long> allNO, double salary,
+			double bonus, String payDate, long NO,double freight, FormState formstate){
+		this.date = date;
+		this.money = money;
+		this.account = account;
+		this.rent = rent;
+		this.year = year;
+		this.freight = freight;
+		this.allNO = allNO;
+		this.salary = salary;
+		this.bonus = bonus;
+		this.payDate = payDate;
+		this.NO = NO;
 		this.formstate = formstate;
 	}
 
@@ -43,10 +56,6 @@ public class PaymentFormVO implements Serializable{
 	public long getAccount() {
 		return account;
 	}
-	
-	public long getNO(){
-		return NO;
-	}
 
 	public double getRent() {
 		return rent;
@@ -60,8 +69,8 @@ public class PaymentFormVO implements Serializable{
 		return freight;
 	}
 
-	public long getId() {
-		return id;
+	public ArrayList<Long> getAllNO() {
+		return allNO;
 	}
 
 	public double getSalary() {
@@ -72,8 +81,12 @@ public class PaymentFormVO implements Serializable{
 		return bonus;
 	}
 
-	public int getMonth() {
-		return month;
+	public String getPayDate() {
+		return payDate;
+	}
+
+	public long getNO() {
+		return NO;
 	}
 
 	public FormState getFormstate() {
@@ -108,8 +121,8 @@ public class PaymentFormVO implements Serializable{
 		this.freight = freight;
 	}
 
-	public void setId(long id) {
-		this.id = id;
+	public void setAllNO(ArrayList<Long> allNO) {
+		this.allNO = allNO;
 	}
 
 	public void setSalary(double salary) {
@@ -120,16 +133,15 @@ public class PaymentFormVO implements Serializable{
 		this.bonus = bonus;
 	}
 
-	public void setMonth(int month) {
-		this.month = month;
+	public void setPayDate(String payDate) {
+		this.payDate = payDate;
 	}
 
-	public void setNO(long nO) {
-		NO = nO;
+	public void setNO(long NO) {
+		this.NO = NO;
 	}
 
 	public void setFormstate(FormState formstate) {
 		this.formstate = formstate;
 	}
-	
 }

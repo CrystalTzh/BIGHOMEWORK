@@ -4,18 +4,26 @@ import java.io.Serializable;
 import state.UserRole;
 
 public class UserInfoPO implements Serializable{
-	long userAccount;//用户名（即账号）
+	String userAccount;//用户名（即账号）
 	String password;//账号密码
 	UserRole userRole;//用户类型（依据职业）
 	
-	public UserInfoPO(long accountID, String password, 
+	public UserInfoPO(String accountID, String password, 
 			UserRole userRole) {
 		this.userAccount = accountID;
 		this.password = password;
 		this.userRole = userRole;
 	}
 
-	public long getUserAccount() {
+	public UserInfoPO() {
+		super();
+		// TODO Auto-generated constructor stub
+		this.userAccount = "admin";
+		this.password = "admin";
+	}
+
+
+	public String getUserAccount() {
 		return userAccount;
 	}
 
@@ -27,7 +35,7 @@ public class UserInfoPO implements Serializable{
 		return userRole;
 	}
 
-	public void setUserAccount(long userAccount) {
+	public void setUserAccount(String userAccount) {
 		this.userAccount = userAccount;
 	}
 

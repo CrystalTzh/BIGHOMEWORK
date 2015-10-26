@@ -42,10 +42,10 @@ public class InventoryInfoInventoryblStub implements InventoryInfoInventoryblSer
 
 	@Override
 	public InventoryInfoVO add(ArrayList<LocationNode> locationNode,
-			double limit, Zone emptyZone) {
+			double limit) {
 		// TODO Auto-generated method stub
 		InventoryInfoVO i = null;
-		i = new InventoryInfoVO(locationNode,limit,emptyZone,FormState.EDITABLE);
+		i = new InventoryInfoVO(locationNode,limit,Zone.CAR);
 		return i;
 	}
 
