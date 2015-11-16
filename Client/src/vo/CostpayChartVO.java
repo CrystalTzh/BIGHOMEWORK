@@ -5,15 +5,15 @@ import java.io.Serializable;
 import state.FormState;
 
 public class CostpayChartVO implements Serializable{
-	double income;
-	double cost;
-	double profit;
-	String NO;
+	int income;
+	int cost;
+	int profit;
+	long NO;
 	FormState formstate;//单据的状态
 	
 	public CostpayChartVO() {}
 	
-	public CostpayChartVO(double i,double c,double p,String N, FormState formstate){
+	public CostpayChartVO(int i,int c,int p, long N, FormState formstate){
 		income = i;
 		cost = c;
 		profit = p;
@@ -21,19 +21,19 @@ public class CostpayChartVO implements Serializable{
 		this.formstate = formstate;
 	}
 
-	public double getIncome() {
+	public int getIncome() {
 		return income;
 	}
 
-	public double getCost() {
+	public int getCost() {
 		return cost;
 	}
 
-	public double getProfit() {
+	public int getProfit() {
 		return profit;
 	}
 	
-	public String getNO(){
+	public long getNO(){
 		return NO;
 	}
 
@@ -41,19 +41,19 @@ public class CostpayChartVO implements Serializable{
 		return formstate;
 	}
 
-	public void setIncome(double income) {
+	public void setIncome(int income) {
 		this.income = income;
 	}
 
-	public void setCost(double cost) {
+	public void setCost(int cost) {
 		this.cost = cost;
 	}
 
-	public void setProfit(double profit) {
+	public void setProfit(int profit) {
 		this.profit = profit;
 	}
 
-	public void setNO(String nO) {
+	public void setNO(long nO) {
 		NO = nO;
 	}
 

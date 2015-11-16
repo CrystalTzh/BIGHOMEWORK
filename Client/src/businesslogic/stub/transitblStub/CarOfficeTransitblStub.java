@@ -1,10 +1,10 @@
 package businesslogic.stub.transitblStub;
 
-import businesslogicservice.transitblservice.CarOfficeTransitblService;
+import businesslogicservice.transitblservice.CarOfficeFormTransitblService;
 import vo.CarInfoVO;
 import vo.CarOfficeFormVO;
 
-public class CarOfficeTransitblStub implements CarOfficeTransitblService{
+public class CarOfficeTransitblStub implements CarOfficeFormTransitblService{
 
 	@Override
 	public CarOfficeFormVO CarOfficeFormcreate() {

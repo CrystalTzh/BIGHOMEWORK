@@ -15,7 +15,8 @@ public class ReceiptFormVO implements  Serializable{
 	
 	public ReceiptFormVO() {}
 	
-	public ReceiptFormVO(String d,double m,String e,ArrayList<Long> i,long NO, FormState formstate){
+	public ReceiptFormVO(String d,double m,String e,ArrayList<Long> i,
+			long NO, FormState formstate){
 		date = d;
 		money = m;
 		expressManNumber = e;

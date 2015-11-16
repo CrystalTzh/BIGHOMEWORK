@@ -6,9 +6,9 @@ import vo.CostpayChartVO;
 
 public interface CostPayChartFinanceblService {
 
-	public CostpayChartVO costPayChartCreat();
-	public boolean costPayChartCreat(CostpayChartVO vo);
-	public CostpayChartVO costPayChartCreat(long NO);
+	public CostpayChartVO costPayChartCreate();
+	public boolean costPayChartAdd(CostpayChartVO vo);
+	public CostpayChartVO costPayChartCheck(long NO);
 	public boolean costPayChartAddInfo (ReceiptFormPO rpo,PaymentFormPO ppo);
 	
 }
