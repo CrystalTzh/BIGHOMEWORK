@@ -1,5 +1,6 @@
 import java.rmi.RemoteException;
 
+import vo.ConstInfoVO;
 import datadriver.constdatadriver.ConstdataDriver;
 import datadriver.corporationdatadriver.CarInfoCorporationdataDriver;
 import datadriver.corporationdatadriver.DriverInfoCorporationdataDriver;
@@ -36,6 +37,7 @@ import datastub.transitdatastub.OfficeArrivalFormTransitdataStub;
 import datastub.transitdatastub.OrderFormTransitdataStub;
 import datastub.transitdatastub.StoreArrivalFormTransitdataStub;
 import datastub.userdatastub.UserdataStub;
+import businesslogic.constbl.ConstController;
 import businesslogic.driver.constblDriver.ConstInfoConstblDriver;
 import businesslogic.driver.financeblDriver.AccountInfoFinanceblDriver;
 import businesslogic.driver.financeblDriver.PaymentFormFinanceblDriver;
@@ -94,6 +96,7 @@ import businesslogic.stub.formapprovalblStub.OrderFormFormapprovalblStub;
 import businesslogic.stub.formapprovalblStub.PaymentFormFormapprovalblStub;
 import businesslogic.stub.formapprovalblStub.ReceiptFormFormapprovalblStub;
 import businesslogic.stub.formapprovalblStub.StorageInFormFormapprovalblStub;
+import businesslogicservice.constblservice.ConstInfoConstblService;
 
 
 public class Client {
@@ -353,6 +356,16 @@ public class Client {
 //		OrderFormTransitdataDriver orderFormTransitdataDriver = new OrderFormTransitdataDriver();
 //		orderFormTransitdataDriver.driver(orderFormTransitdataStub);
 		
+		ConstInfoConstblService constbl = new ConstController();
+		ConstInfoVO constInfoVO;
+		constInfoVO = constbl.find();
+		System.out.println("具体实现常量查询功能！");
+		System.out.println("距离价格常量："+constInfoVO.getDistancePrice());
+		System.out.println("基本工资："+constInfoVO.getBaseSalary());
+		System.out.println("快递员揽件提成："+constInfoVO.getReceiveExpressPrize());
+		System.out.println("快递员派件提成："+constInfoVO.getSendExpressPrize());
+		System.out.println("司机市内计次："+constInfoVO.getSalaryEachInCity());
+		System.out.println("司机跨市计次："+constInfoVO.getSalaryEachOutCity());
 	}
 
 }

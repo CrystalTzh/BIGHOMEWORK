@@ -44,11 +44,17 @@ public class ReceiptGatherFinanceblStub implements
 	}
 
 	@Override
-	public boolean receiptGatherAddInfo(
+	public boolean ReceiptGatherAddInfo(
 			ArrayList<ReceiptFormVO> receiptFormgathervo) {
 		// TODO Auto-generated method stub
 		System.out.println("call receiptGatherAddInfo...");
 		return false;
 	}
+
+//	@Override
+//	public boolean ReceiptGatherAddInfo(ArrayList<ReceiptFormVO> receiptFormgathervo) {
+//		// TODO Auto-generated method stub
+//		return false;
+//	}
 
 }

@@ -3,6 +3,7 @@ package po;
 import java.io.Serializable;
 
 import state.ExpressType;
+import state.Transportation;
 
 public class OrderFormPO implements Serializable {
 	String sendername;
@@ -27,27 +28,22 @@ public class OrderFormPO implements Serializable {
 	String date; //寄件日期
 	String realReceiver; //实际收件人
 	String realReceiveDate;//实际收件日期
-
-	
-	public OrderFormPO (String sendername, 
-			String senderaddress, String sendercompany, 
-			String sendertel, String sendermobiletel, 
-			String receivername, String receiveraddress,
-			String receivercompany, String receivertel,
-			String receivermobiletel, int number,
-			double weight, double size, String name,
-			ExpressType type, double packingCharges,
-			double transCharges, double expressCharges,
-			long ID, String date, String realReceiver, 
-			String realReceiveDate) {
+	Transportation transportation;//货运状态
+	public OrderFormPO() {}
+	public OrderFormPO(String sendername, String senderaddress,
+			String sendercompany, String sendertel, String sendermobiletel,
+			String receivername, String receiveraddress, String receivercompany, String receivertel,
+			String receivermobiletel, int number, double weight, double size, 
+			String name, ExpressType type, double packingCharges, double transCharges,
+			double expressCharges, long ID, String date, String realReceiver, String realReceiveDate, 
+			Transportation transportation)
+	{
 		this.sendername = sendername;
 		this.senderaddress = senderaddress;
 		this.sendercompany = sendercompany;
 		this.sendertel = sendertel;
 		this.sendermobiletel = sendermobiletel;
-		this.receivermobiletel = receivermobiletel;
 		this.receivername = receivername;
-		this.receiveraddress = receiveraddress;
 		this.receivercompany = receivercompany;
 		this.receivertel = receivertel;
 		this.receivermobiletel = receivermobiletel;
@@ -63,8 +59,8 @@ public class OrderFormPO implements Serializable {
 		this.date = date;
 		this.realReceiver = realReceiver;
 		this.realReceiveDate = realReceiveDate;
+		this.transportation = transportation;
 	}
-	
 	public String getSendername() {
 		return sendername;
 	}
@@ -131,6 +127,9 @@ public class OrderFormPO implements Serializable {
 	public String getRealReceiveDate() {
 		return realReceiveDate;
 	}
+	public Transportation getTransportation() {
+		return transportation;
+	}
 	public void setSendername(String sendername) {
 		this.sendername = sendername;
 	}
@@ -196,5 +195,9 @@ public class OrderFormPO implements Serializable {
 	}
 	public void setRealReceiveDate(String realReceiveDate) {
 		this.realReceiveDate = realReceiveDate;
-	} 
+	}
+	public void setTransportation(Transportation transportation) {
+		this.transportation = transportation;
+	}
+
 }

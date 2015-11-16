@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import state.ExpressType;
 import state.FormState;
+import state.Transportation;
 
 public class OrderFormVO implements Serializable {
 	
@@ -30,7 +31,9 @@ public class OrderFormVO implements Serializable {
 	String date; //寄件日期
 	String realReceiver; //实际收件人
 	String realReceiveDate;//实际收件日期
+	Transportation transportation = null;//货运状态
 	FormState formstate;//单据的状态
+	
 	
 	public OrderFormVO() {}
 	
@@ -211,5 +214,12 @@ public class OrderFormVO implements Serializable {
 	public void setFormstate(FormState formstate) {
 		this.formstate = formstate;
 	} 
-	
+	public Transportation getTransportation() {
+		return transportation;
+	}
+
+	public void setTransportation(Transportation transportation) {
+		this.transportation = transportation;
+	}
+
 }

@@ -3,12 +3,16 @@ package vo;
 import java.io.Serializable;
 
 public class ConstInfoVO implements Serializable {
-	double distancePrice;//距离价格常量
-	double baseSalary;//快递员和营业厅业务员的基本工资
-	double receiveExpressPrize;//快递员揽件提成
-	double sendExpressPrize;//快递员派件提成
-	double salaryEachInCity;//司机市内计次
-	double salaryEachOutCity;//司机跨市计次
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	double distancePrice = 2.0;//距离价格常量
+	double baseSalary = 2000.0;//快递员和营业厅业务员的基本工资
+	double receiveExpressPrize = 1.0;//快递员揽件提成
+	double sendExpressPrize = 0.5;//快递员派件提成
+	double salaryEachInCity = 50;//司机市内计次
+	double salaryEachOutCity = 200;//司机跨市计次
 	
 	public ConstInfoVO(double dp, double bs, double rep, double sep, 
 			double sei, double seo) {
@@ -20,12 +24,7 @@ public class ConstInfoVO implements Serializable {
 		salaryEachOutCity = seo;
 	}
 	public ConstInfoVO(){
-		distancePrice = 2.0;
-		baseSalary = 2000;
-		receiveExpressPrize = 1;
-		sendExpressPrize = 0.5;
-		salaryEachInCity = 50;
-		salaryEachOutCity = 200;
+
 	}
 
 	public double getDistancePrice() {

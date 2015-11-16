@@ -1,5 +1,6 @@
 package businesslogic.stub.constblStub;
 
+import po.ConstPO;
 import vo.ConstInfoVO;
 import businesslogicservice.constblservice.ConstInfoConstblService;
 
@@ -19,11 +20,11 @@ public class ConstInfoConstblStub implements ConstInfoConstblService{
 	}
 
 	@Override
-	public ConstInfoVO update() {
+	public ConstPO update(ConstInfoVO constInfoVO) {
 		// TODO Auto-generated method stub
-		ConstInfoVO constInfoVO = new ConstInfoVO();
+		ConstPO constInfoPO = new ConstPO(distancePrice, baseSalary, receiveExpressPrize, salaryEachInCity, salaryEachOutCity, sendExpressPrize);
 		System.out.println("Update successfully!");
-		return constInfoVO;
+		return constInfoPO;
 	}
 
 }

@@ -17,6 +17,6 @@ public class ReceiptGatherFinanceblDriver {
 		receiptGatherFinanceblStub.ReceiptGathersubmit(receiptGatherVO);
 		receiptGatherFinanceblStub.ReceiptGatherwithdraw(receiptGatherVO);
 		ArrayList<ReceiptFormVO> receiptFormgathervo = null;
-		receiptGatherFinanceblStub.receiptGatherAddInfo(receiptFormgathervo);
+		receiptGatherFinanceblStub.ReceiptGatherAddInfo(receiptFormgathervo);
 	}
 }

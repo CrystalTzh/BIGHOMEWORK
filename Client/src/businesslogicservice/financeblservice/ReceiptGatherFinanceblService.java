@@ -12,5 +12,5 @@ public interface ReceiptGatherFinanceblService {
 	public boolean ReceiptGathersave (ReceiptGatherVO vo);
 	public boolean ReceiptGathersubmit (ReceiptGatherVO vo);
 	public boolean ReceiptGatherwithdraw (ReceiptGatherVO vo);
-	public boolean  receiptGatherAddInfo (ArrayList<ReceiptFormVO> receiptFormgathervo);
+	public boolean ReceiptGatherAddInfo (ArrayList<ReceiptFormVO> receiptFormgathervo);
 }

@@ -3,12 +3,13 @@ package po;
 import java.io.Serializable;
 
 public class CarInfoPO implements Serializable{
-	String carNumber;
-	String plateNumber;
-	String engineNUmber;
-	String chassisNumber;
+	String carNumber;//车辆代号
+	String plateNumber;//车牌号
+	String engineNUmber;//发动机编号
+	String chassisNumber;//底盘号
 	String buyTime;
 	String activeTime;
+	//状态 要不要加？？？
 	
 	public CarInfoPO(String c,String p,String e,String ch,String b,String a){
 		carNumber = c;
